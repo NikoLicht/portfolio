@@ -1,15 +1,37 @@
 ---
 layout: ../../layouts/ProjectPage.astro
 title: Tasting Menu
-roles: ["Lead Design", "Game Developer"]
-platform: Unity, Blender
-summary: A food-themed minigame collection for four players, who compete against eachother to score the most points.
-date: 2019
-tech: ["Unity", "C#","Blender"]
-shortText: We worked with some (self chosen) design constraints; simple analog controls and timed levels. This means you can pick up how to play a minigame with relative ease and you finish it within minute or two. Worth highlighting is that we created approximately 20 minigames, but chose to only included the 10 best.
+roles: ["3D Artist", "Techical Artist"]
+date: 2023 - now
+tech: ["Unity", "C#","Blender", "Python"]
+summary: low-poly mobile one-finger racing game, with image recognition of cars.
+shortText: This is a short, but veeeeery cool text about the game that i have made. Or been part of making
+cover: /assets/projects/project_spotracers/cover.webp
 applinks: 
-  - name: "itch.io"
-    link: "https://alfenhose.itch.io/tasting-menu"
+  - name: "Apple Appstore"
+    link: "https://apps.apple.com/us/app/spotracers-car-racing-game/id1517765834"
+  - name: "Google Play"
+    link: "https://play.google.com/store/apps/details?id=com.levelupgarage.spotracers"
+
+mainMediaName: SpotRacers Trailer on youtube
+mainMediaLink: "https://www.youtube.com/watch?v=F0zaBcldoEY"
+mainMediaType: "youtube"
+
+media:
+  - text: "In the game, i have created quite a lot of tracks, including the systems on the tracks, and the all the assets in a track."
+    paths: ["/assets/projects/project_spotracers/cover.webp","/assets/projects/project_spotracers/cover.webp", "/assets/projects/project_spotracers/cover.webp", "/assets/projects/project_spotracers/cover.webp", "/assets/projects/project_spotracers/cover.webp","/assets/projects/project_spotracers/cover.webp", "/assets/projects/project_spotracers/cover.webp"]
+  - text: "In the game, i have created quite a lot of tracks, including the systems on the tracks, and the all the assets in a track."
+    paths: ["/assets/projects/project_spotracers/cover.webp","/assets/projects/project_spotracers/cover.webp", "/assets/projects/project_spotracers/cover.webp", "/assets/projects/project_spotracers/cover.webp", "/assets/projects/project_spotracers/cover.webp","/assets/projects/project_spotracers/cover.webp"]
+  - text: "In the game, i have created quite a lot of tracks, including the systems on the tracks, and the all the assets in a track."
+    paths: ["/assets/projects/project_spotracers/cover.webp", "/assets/projects/project_spotracers/cover.webp", "/assets/projects/project_spotracers/cover.webp","/assets/projects/project_spotracers/cover.webp"]
+  - text: "In the game, i have created quite a lot of tracks, including the systems on the tracks, and the all the assets in a track."
+    paths: ["/assets/projects/project_spotracers/cover.webp","/assets/projects/project_spotracers/cover.webp", "/assets/projects/project_spotracers/cover.webp"]
+  - text: "In the game, i have created quite a lot of tracks, including the systems on the tracks, and the all the assets in a track."
+    paths: ["/assets/projects/project_spotracers/cover.webp","/assets/projects/project_spotracers/cover.webp"]
+  - text: "In the game, i have created quite a lot of tracks, including the systems on the tracks, and the all the assets in a track."
+    paths: ["/assets/projects/project_spotracers/cover.webp"]
+  - text: "In the game, i have created quite a lot of tracks, including the systems on the tracks, and the all the assets in a track."
+    paths: []
 ---
 
 In tasting menu I acted as lead designer. I tried to manage / cheer on a small team of five persons with different competences and experience. I messed a bit up, but learned a lot along the way.
