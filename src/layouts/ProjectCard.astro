@@ -1,0 +1,89 @@
+---
+const {post} = Astro.props;
+---
+
+<a href={post.url} class="project">
+    <img src={post.frontmatter.cover} alt={"An awesome-looking cover photo for '" + post.frontmatter.title + "'"}>
+    <p class="project-title">{post.frontmatter.title}</p>
+    <p class="project-summary">{post.frontmatter.summary}</p>
+    <div class="project-roles">
+        <p class="slanted-box">{post.frontmatter.roles}</p>
+    </div>
+</a>
+
+<style>
+    :root{
+        --egg-color-dark: rgb(160, 148, 128);
+    }
+
+    .project {
+        background-color: var(--egg-color);
+        padding: 1vw 1vw 1vw 1vw;
+        text-decoration:none;
+        transition: background-color 0.3s ease-in-out;
+        aspect-ratio: 1 / 1;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .project:hover {
+        color: var(--egg-color);
+        background-color: var(--dark-color);
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .project-title {
+        font-size: 2vi;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .project-summary {
+        font-size: 1vi;
+    }
+
+    .project-roles {
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+
+    }
+
+
+    .slanted-box :global{
+        transform: skewX(-15deg);
+        background-color: var(--dark-color);
+        display: inline-block;
+        padding-left: 1em;
+        padding-right: 1em;
+        color: var(--light-color);
+        text-align: right;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+    .project {
+        width: 80%;
+    }
+
+    .project-title{
+        font-size:6vi;
+        text-transform: uppercase;
+    }
+
+    .project-summary{
+        font-size: 4vi;
+    }
+
+</style>
+

@@ -1,0 +1,138 @@
+---
+import { manifest } from "astro:ssr-manifest";
+const {mediaSection} = Astro.props;
+const imageSectionClasses : string[] = ["no-image", "one-image-container", "two-image-container", "three-image-container", "four-image-container", "more-image-container"]
+
+let index = mediaSection.paths.length;
+if(index > imageSectionClasses.length - 1) index = imageSectionClasses.length - 1;
+if(index < 0 ) index = 0;
+
+const imageSectionClass : string = imageSectionClasses[index];
+const numberOfItems : number = mediaSection.paths.length;
+const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
+---
+
+<div class="gallery-tile">
+    <div class={"image-section " + imageSectionClass}>
+        {mediaSection.paths.map((path: string) => 
+            <div class="image-container">
+                <img src={path} alt="cool images about stuff"/>
+            </div>
+        )}
+    </div>
+    <div class="text-section">
+        <p>{mediaSection.text}</p>
+    </div>
+</div>
+
+
+
+<style define:vars={{numberOfItems, imageContainerHeight}}>
+    .gallery-tile{
+        margin: 3em;
+        background-color: var(--egg-color-dark);
+        max-height: 70vh;
+        min-height: 20vh;
+        padding: 2em;
+
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        " image info ";
+        gap: 1em;
+    }
+
+    .text-section{
+        grid-area: info;
+        padding: 1em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .image-section {
+        grid-area: image;
+        max-height: inherit;
+
+    }
+
+    .no-image{
+        display: none;
+    }
+
+    .one-image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .two-image-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0;
+
+    }
+
+    .three-image-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0;
+    }
+
+    .four-image-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+
+    }
+
+    .more-image-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+
+        height: 50vh;
+
+    }
+
+    .more-image-container .image-container{
+        max-height:  calc(1% * var(--imageContainerHeight));
+        max-width: calc(200% / var(--numberOfItems));
+    }
+
+
+
+
+    .image-container {
+        overflow: hidden;
+        max-height: 100%;
+    }
+
+    .image-container img {
+        transition: transform 0.3s ease;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.5);
+    }
+
+    .image-container:not(:hover) img {
+        transform: scale(1);
+    }
+
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 1;
+    }
+
+</style>

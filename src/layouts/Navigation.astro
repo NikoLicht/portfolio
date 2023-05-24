@@ -1,0 +1,69 @@
+---
+const infoPages = await Astro.glob("../pages/info/*.md");
+---
+
+<div class="navigation-container">
+    <div class="nav-wrapper">
+        <nav class="navigation">
+            <li><a href="http://localhost:3000/">home</a></li>
+            {
+                infoPages.map( (info) => <li><a href={info.url}>{info.frontmatter.title}</a></li>)
+            }
+        </nav>
+    </div>
+</div>
+
+<style>
+
+    .navigation-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-wrapper{
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation {
+        grid-area: upperRight;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+    }
+
+    li {
+        float: left;
+        flex-basis: content;
+        flex-grow: 1;
+        padding: 0;
+        transition: background-color 0.3s ease-in-out;
+    
+    }
+
+    li:hover{
+        background-color: var(--dark-color);
+    }
+
+    li a {
+        display: block;
+        color: var(--dark-color);
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 1vi;
+        font-family: 'Roboto Mono', monospace;
+        text-transform: uppercase;
+    }
+
+    li a:hover{
+        font-style: italic;
+        color: var(--egg-color-dark);
+    }
+</style>

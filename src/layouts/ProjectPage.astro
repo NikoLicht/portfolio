@@ -1,0 +1,199 @@
+---
+import MainLayout from "./MainLayout.astro";
+import VerticalLine from "./VerticalLine.astro";
+import Slider from "./Slider.astro";
+import Slide from "./Slide.astro";
+import GalleryTile from "./GalleryTile.astro";
+const {frontmatter} = Astro.props;
+---
+
+<MainLayout>
+    <div slot="top-section" class="top-section-content">
+        <div class="content">
+
+            <div class="media-container">
+                {frontmatter.mainMediaType === "youtube" ?  <iframe width="560" height="315" src={frontmatter.mainMediaLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> : "" }
+            </div>
+
+            <div class="info-container">
+                <h1 class="info-field title">{frontmatter.title}</h1>
+                <div class="info-field date">
+                    <p>{frontmatter.date}</p>
+                </div>
+                <div class="info-field roles">
+                    {
+                        frontmatter.roles.map((role) => <p class="multiple-data">{role}</p><VerticalLine class="hide-last"/>)
+                    }
+                </div>
+                <div class="info-field tech">
+                    {
+                        frontmatter.tech.map((tech) => <p class="multiple-data">{tech}</p><VerticalLine class="hide-last"/>)
+                    }
+                </div>
+                <div class="info-field summary">
+                    <p class="summary-text">{frontmatter.shortText}</p>
+                </div>
+                <div class="info-field links">
+                    {
+                        frontmatter.applinks.map((link) => <a class="multiple-data" href={link.link}>{link.name}</a><VerticalLine class="hide-last"/>)
+                    }
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div slot="bottom-section" class="bottom-section-content">
+        <div class="bottom-left gallery">
+            {
+                frontmatter.media.map((mediaSection) => <GalleryTile {mediaSection}></GalleryTile>)
+            }
+        </div>
+
+        <div class="bottom-right">
+        </div>
+    </div>
+
+</MainLayout>
+
+<script src="../js/test.js"> </script>
+
+
+<style>
+    body{
+        background-color: var(--dark-color);
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        " image info "
+        " image info "
+        " image info ";
+        gap: 1em;
+        min-height: 50vh;
+    }
+
+    .media-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .media-container iframe{
+        width: 100%;
+        height: 100%;
+        padding: 4em;
+    }
+
+    .info-field{
+        background-color: var(--egg-color-dark);
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        padding: 0.5rem;
+    }
+
+
+    .multiple-data{
+        text-align:center;
+    }
+
+    .info-container{
+        padding:4em;  
+        grid-area: info;
+
+        display: grid;
+        grid-template-columns: 1fr .2fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr 3fr 1fr;
+        grid-template-areas: 
+        " title title title title "
+        " year year roles roles "
+        " tech tech tech tech "
+        " summary summary summary summary "
+        " links links links links ";
+        gap: 1em;
+    }
+
+
+    .title{
+        grid-area: title;
+    }
+
+    h1{
+        text-transform:uppercase;
+    } 
+
+
+    .date{
+        grid-area: year;
+    }
+
+    .roles{
+        grid-area: roles;
+    }
+    
+    .tech{
+        grid-area: tech;
+    }
+
+    .summary{
+        grid-area: summary;
+        padding: 1em;
+    }
+
+    .links{
+        grid-area: links;
+    }
+
+    .info-field .hide-last:last-child{
+        display: none;
+    }
+
+
+.slider-nav {
+  align-items: center;
+  background-color: #ddd;
+  border-radius: 50%;
+  color: #000;
+  display: inline-flex;
+  height: 1.5rem;
+  justify-content: center;
+  padding: .5rem;
+  position: relative;
+  text-decoration: none;
+  width: 1.5rem;
+}
+
+.slider-nav:hover,
+.slider-nav:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.slide-1 {
+  background-color: #fdc;
+}
+
+.slide-2 {
+  background-color: #bfd;
+}
+
+.slide-3 {
+  background-color: #cdf;
+}
+
+.slide-4 {
+  background-color: #dca;
+}
+
+.slide-5 {
+  background-color: #ffc;
+}
+
+
+
+</style>

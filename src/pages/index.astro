@@ -1,81 +1,121 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import MainLayout from "../layouts/MainLayout.astro";
+import * as info from '../pages/info/get_to_know_me.md';
+import ProjectCard from "../layouts/ProjectCard.astro";
+import Navigation from "../layouts/Navigation.astro";
+const allProjects = await Astro.glob("../pages/projects/*.md");
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<MainLayout title="Who is Nikolaj Licht">
+
+    <div slot="top-section" class="top-section-content">
+        <div class="me_heading upper-left">
+            <h1>{info.frontmatter.job_title}</h1>
+        </div>
+
+        <div class="me_heading" id="me_image_container">
+            <img id="me_image" src={info.frontmatter.cover} alt={"Photograph of Nikolaj Licht, very employable looking"}>
+        </div>
+
+        <div class="me_heading lower-right">
+            <h1>{info.frontmatter.name_first}</h1>
+            <h1>{info.frontmatter.name_last}</h1>
+        </div>
+    </div>
+
+
+    <div slot="bottom-section" class="bottom-section-content">
+        <h2 class="me_heading upper-left">Stuff to look at</h2>
+        <div class="projects">
+        {
+            allProjects.map((post) => <ProjectCard {post} />)
+        }
+        </div>
+    </div>
+ 
+</MainLayout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+
+    #me_image_container{
+        grid-area: picture;
+        display: block; 
+        max-height: 100%;
+        max-width: 100%;
+        overflow: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        background-color: white;
+    }
+
+    #me_image{
+        max-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: 0 42%;
+    }
+
+    .projects{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 3em;
+        padding: 3em;
+    }
+
+    .top-section-content{
+        display: grid;
+        max-height: 80vh;
+        grid-template-columns: 5fr minmax(4em, 20%) 5fr ;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas: 
+        " upperLeft . upperRight "
+        " picture picture picture "
+        " . . lowerRight ";
+        gap: 1em;
+    }
+
+    .me_heading{
+        font-size: 2vi;
+        color: var(--dark-color);
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+    .me_heading > h1{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .upper-left{
+        grid-area: upperLeft;
+    }
+
+    .upper-right{
+        grid-area: upperRight;
+    }
+
+    .lower-right{
+        grid-area: lowerRight;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .lower-right > h1{
+        width: 100%;
+        bottom:0;
+        flex: 0 0 5em;;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .projects{
+            display: block;
+        }
+    }
 </style>
