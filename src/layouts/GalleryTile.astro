@@ -4,7 +4,7 @@ const imageSectionClasses : string[] = ["no-image", "one-image-container", "two-
 
 let sources : Record<string, string> = {};
 
-let images = await Astro.glob('../images/projects/**/*.{png,gif,webp}').then(files => {
+let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').then(files => {
     files.map((checkFile) => {
             for (let index = 0; index < mediaSection.paths.length; index++) {
                 let matchName : string = mediaSection.paths[index];

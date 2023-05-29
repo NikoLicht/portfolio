@@ -1,17 +1,16 @@
 ---
 const {post} = Astro.props;
 const cover = post.frontmatter.cover;
+const roles = post.frontmatter.roles;
+console.log(roles);
 
 console.log("looking for: " + cover);
 let coverImg : any;
 
-let images = await Astro.glob('../images/projects/**/*.{png,gif,webp}').then(files => {
+let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').then(files => {
     files.map((checkFile) => {
-        console.log("---");
-        console.log("Checking match between");
-        console.log(cover);
-        console.log("and")
-        console.log(checkFile.default);
+        let match = checkFile.default;
+        console.log("Checking match between " + cover + " and " + match);
     });
     return files.filter(file => file.default.includes(cover));
 }).then( matches => {
@@ -27,7 +26,11 @@ let images = await Astro.glob('../images/projects/**/*.{png,gif,webp}').then(fil
     <p class="project-title">{post.frontmatter.title}</p>
     <p class="project-summary">{post.frontmatter.summary}</p>
     <div class="project-roles">
-        <p class="slanted-box">{post.frontmatter.roles}</p>
+        {
+            roles.map((role :string) => {
+                return <p class="slanted-box">{role}</p>
+            })
+        }
     </div>
 </a>
 
@@ -75,6 +78,11 @@ let images = await Astro.glob('../images/projects/**/*.{png,gif,webp}').then(fil
         margin: auto;
         padding: 0;
 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+
     }
 
 
@@ -85,9 +93,6 @@ let images = await Astro.glob('../images/projects/**/*.{png,gif,webp}').then(fil
         padding-left: 1em;
         padding-right: 1em;
         color: var(--light-color);
-        text-align: right;
-        margin-left: auto;
-        margin-right: 0;
     }
 
 
