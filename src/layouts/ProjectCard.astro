@@ -1,9 +1,29 @@
 ---
 const {post} = Astro.props;
+const cover = post.frontmatter.cover;
+
+console.log("looking for: " + cover);
+let coverImg : any;
+
+let images = await Astro.glob('../images/projects/**/*.{png,gif,webp}').then(files => {
+    files.map((checkFile) => {
+        console.log("---");
+        console.log("Checking match between");
+        console.log(cover);
+        console.log("and")
+        console.log(checkFile.default);
+    });
+    return files.filter(file => file.default.includes(cover));
+}).then( matches => {
+    console.log(matches.length + " is lenght of matching images");
+    coverImg = matches[0].default;
+    console.log(coverImg);
+});
+
 ---
 
 <a href={post.url} class="project">
-    <img src={post.frontmatter.cover} alt={"An awesome-looking cover photo for '" + post.frontmatter.title + "'"}>
+    <img src={coverImg} alt={"An awesome-looking cover photo for '" + post.frontmatter.title + "'"}>
     <p class="project-title">{post.frontmatter.title}</p>
     <p class="project-summary">{post.frontmatter.summary}</p>
     <div class="project-roles">

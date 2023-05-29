@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/ProjectPage.astro
-title: Arbejds Miljø Centret
+title: SpotRacers
 roles: ["3D Artist", "Techical Artist"]
 date: 2023 - now
 tech: ["Unity", "C#","Blender", "Python"]
 summary: low-poly mobile one-finger racing game, with image recognition of cars.
 shortText: This is a short, but veeeeery cool text about the game that i have made. Or been part of making
-cover: "shft_product_morph"
+cover: "../../images/test.avif"
 applinks: 
   - name: "Apple Appstore"
     link: "https://apps.apple.com/us/app/spotracers-car-racing-game/id1517765834"
@@ -18,9 +18,6 @@ mainMediaLink: "https://www.youtube.com/watch?v=pAdEDc6Jkug"
 mainMediaType: "youtube"
 
 media:
-  - text: "Here you can clearly see how I have successfully added a test image to my website. This has taken quite a few days of work, and caused too much frustration."
-    paths: ["shft_product_morph"]
-  - text: "Here are some of my favourite test images. I sincerly hope you enjoy them."
-    paths: ["spotracers_cover", "spotracers_cover", "spotracers_cover"]
+  - text: "test image"
+    paths: ["../../images/test.avif"]
 ---
-something

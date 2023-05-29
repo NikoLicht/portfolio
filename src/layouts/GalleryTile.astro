@@ -1,7 +1,20 @@
 ---
-import { manifest } from "astro:ssr-manifest";
 const {mediaSection} = Astro.props;
 const imageSectionClasses : string[] = ["no-image", "one-image-container", "two-image-container", "three-image-container", "four-image-container", "more-image-container"]
+
+let sources : Record<string, string> = {};
+
+let images = await Astro.glob('../images/projects/**/*.{png,gif,webp}').then(files => {
+    files.map((checkFile) => {
+            for (let index = 0; index < mediaSection.paths.length; index++) {
+                let matchName : string = mediaSection.paths[index];
+                if(checkFile.default.includes(matchName)){
+                    sources[matchName] = checkFile.default;
+                }
+            }
+        });
+    });
+
 
 let index = mediaSection.paths.length;
 if(index > imageSectionClasses.length - 1) index = imageSectionClasses.length - 1;
@@ -16,7 +29,7 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
     <div class={"image-section " + imageSectionClass}>
         {mediaSection.paths.map((path: string) => 
             <div class="image-container">
-                <img src={path} alt="cool images about stuff"/>
+                <img src={sources[path]} alt="cool images about stuff"/>
             </div>
         )}
     </div>

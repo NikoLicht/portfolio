@@ -12,5 +12,18 @@
   "dependencies": {
     "astro": "^2.3.2",
     "nuka-carousel": "^6.0.3"
-  }
+  },
+  "description": "``` npm create astro@latest -- --template basics ```",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikoLicht/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikoLicht/portfolio/issues"
+  },
+  "homepage": "https://github.com/NikoLicht/portfolio#readme"
 }

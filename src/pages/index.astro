@@ -2,8 +2,9 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import * as info from '../pages/info/get_to_know_me.md';
 import ProjectCard from "../layouts/ProjectCard.astro";
-import Navigation from "../layouts/Navigation.astro";
 const allProjects = await Astro.glob("../pages/projects/*.md");
+
+const heroImg = (await import('../images/info/full_figure_extended.png')).default;
 ---
 
 <MainLayout title="Who is Nikolaj Licht">
@@ -14,7 +15,7 @@ const allProjects = await Astro.glob("../pages/projects/*.md");
         </div>
 
         <div class="me_heading" id="me_image_container">
-            <img id="me_image" src={info.frontmatter.cover} alt={"Photograph of Nikolaj Licht, very employable looking"}>
+            <img id="me_image" src={heroImg} width="2000" alt="Photograph of Nikolaj Licht, very employable looking"/>
         </div>
 
         <div class="me_heading lower-right">

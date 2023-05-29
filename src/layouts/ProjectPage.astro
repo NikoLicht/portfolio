@@ -1,8 +1,6 @@
 ---
 import MainLayout from "./MainLayout.astro";
 import VerticalLine from "./VerticalLine.astro";
-import Slider from "./Slider.astro";
-import Slide from "./Slide.astro";
 import GalleryTile from "./GalleryTile.astro";
 const {frontmatter} = Astro.props;
 ---
@@ -52,6 +50,7 @@ const {frontmatter} = Astro.props;
         </div>
 
         <div class="bottom-right">
+            <slot />
         </div>
     </div>
 
