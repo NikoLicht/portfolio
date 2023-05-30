@@ -17,8 +17,12 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').the
 
 
 let index = mediaSection.paths.length;
-if(index > imageSectionClasses.length - 1) index = imageSectionClasses.length - 1;
-if(index < 0 ) index = 0;
+
+if (index >= imageSectionClasses.length) 
+    index = imageSectionClasses.length - 1;
+
+if (index < 0 ) 
+    index = 0;
 
 const imageSectionClass : string = imageSectionClasses[index];
 const numberOfItems : number = mediaSection.paths.length;
@@ -34,7 +38,8 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
         )}
     </div>
     <div class="text-section">
-        <p>{mediaSection.text}</p>
+        <h1 class="gallery-title">{mediaSection.title}</h1>
+        <p class="gallery-text">{mediaSection.text}</p>
     </div>
 </div>
 
@@ -62,6 +67,7 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-direction: column;
     }
 
     .image-section {

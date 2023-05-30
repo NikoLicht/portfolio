@@ -18,6 +18,7 @@ mainMediaLink: "https://www.youtube.com/watch?v=pAdEDc6Jkug"
 mainMediaType: "youtube"
 
 media:
-  - text: "I created a lot of animations this game. Most of the animations are looping, as they are there wile the player figures out what to do."
+  - title: Cool animations
+    text: "I created a lot of animations this game. Most of the animations are looping, as they are there wile the player figures out what to do."
     paths: [ "SimonWizard", "simongif", "benjamin_shuttle"]
 ---

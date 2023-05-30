@@ -1,11 +1,12 @@
 ---
 const infoPages = await Astro.glob("../pages/info/*.md");
+const homePage = await import("../pages/index.astro");
 ---
 
 <div class="navigation-container">
     <div class="nav-wrapper">
         <nav class="navigation">
-            <li><a href="http://localhost:3000/">home</a></li>
+            <li><a href={homePage.url + "/"}>home</a></li>
             {
                 infoPages.map( (info) => <li><a href={info.url}>{info.frontmatter.title}</a></li>)
             }
