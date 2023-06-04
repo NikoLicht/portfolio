@@ -3,6 +3,19 @@ import MainLayout from "./MainLayout.astro";
 import VerticalLine from "./VerticalLine.astro";
 import GalleryTile from "./GalleryTile.astro";
 const {frontmatter} = Astro.props;
+
+let coverImage;
+if (frontmatter.mainMediaType == "image"){
+    let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}').then(files => {
+        files.map((checkFile) => {
+            if(checkFile.default.includes(frontmatter.mainMediaLink)){
+                coverImage = checkFile.default;
+            }
+        });
+    });
+}
+
+
 ---
 
 <MainLayout>
@@ -12,6 +25,8 @@ const {frontmatter} = Astro.props;
             <div class="media-container">
                 {frontmatter.mainMediaType === "youtube" ? 
                 <iframe width="1600" height="900" src={frontmatter.mainMediaLink} title={frontmatter.mainMediaName} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> : "" }
+                {frontmatter.mainMediaType === "image" ? 
+                <img src={coverImage} alt="cool images about stuff"/> : ""}
             </div>
 
             <div class="info-container">

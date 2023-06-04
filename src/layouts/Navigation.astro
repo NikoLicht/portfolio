@@ -67,4 +67,27 @@ const homePage = await import("../pages/index.astro");
         font-style: italic;
         color: var(--egg-color-dark);
     }
+
+    @media only screen and (max-width: 600px) {
+        .navigation-container{
+            position: sticky;
+            top: 0;
+            background-color: var(--dark-color);
+        }
+
+        .navigation{
+            padding-bottom:0;
+            margin-bottom:0;
+        }
+
+        .nav-wrapper{
+            width: 100%;
+        }
+
+        li a {
+            color: var(--light-color);
+            font-size: 2vi;
+            margin-bottom:1em;
+        }
+    }
 </style>
