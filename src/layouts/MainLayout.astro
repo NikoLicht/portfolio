@@ -12,12 +12,12 @@ let {title} = Astro.props;
     </head>
     <body>
         <div class="content">
-            <div class="section">
+            <div class="section gradient-top-down">
                 <Navigation></Navigation>
                 <slot name="top-section"/>
             </div>
 
-            <div class="section">
+            <div class="section gradient-bottoms-up">
                 <slot name="bottom-section"/>
             </div>
         </div>
@@ -40,12 +40,21 @@ let {title} = Astro.props;
     }
 
     .section{
-        background-color: var(--light-color);
-        background: var(--light-color);
-        background: linear-gradient(24deg, var(--egg-color-saturated) 0%, var(--light-color) 80%); 
         padding: 1em;
         margin: auto;
         width: 80%;
+    }
+
+    .gradient-top-down{
+        background-color: var(--light-color);
+        background: var(--light-color);
+        background: linear-gradient(24deg, var(--egg-color-saturated) 0%, var(--light-color) 80%); 
+    }
+    
+    .gradient-bottoms-up{
+        background-color: var(--light-color);
+        background: var(--light-color);
+        background: linear-gradient(24deg, var(--light-color) 0%, var(--egg-color-saturated) 80%); 
     }
 
     .content {

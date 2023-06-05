@@ -139,6 +139,7 @@ if (frontmatter.mainMediaType == "image"){
 
     h1{
         text-transform:uppercase;
+        font-size: 1.5vw;
     } 
 
 
@@ -208,6 +209,24 @@ if (frontmatter.mainMediaType == "image"){
   background-color: #ffc;
 }
 
+    @media only screen and (max-width: 1200px) {
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+        grid-template-areas: 
+        " info"
+        " image";
+        gap: 1em;
+        min-height: 50vh;
+    }
+
+    .title{
+        font-size: 2em;
+    }
+
+}
 
 
 </style>

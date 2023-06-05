@@ -28,7 +28,7 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').the
     <div class="project-roles">
         {
             roles.map((role :string) => {
-                return <p class="slanted-box">{role}</p>
+                return <p class="role slanted-box">{role}</p>
             })
         }
     </div>
@@ -45,6 +45,7 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').the
         text-decoration:none;
         transition: background-color 0.3s ease-in-out;
         max-width:20%;
+        display: block;
     }
 
     a{
@@ -79,12 +80,20 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').the
         list-style-type: none;
         margin: auto;
         padding: 0;
+        text-align: center;
 
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         align-content: center;
 
+    }
+
+    .role{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 0.5em;
     }
 
 
@@ -100,7 +109,12 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').the
 
     @media only screen and (max-width: 600px) {
     .project {
-        width: 80%;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+        padding: 1em;
+        margin-bottom: 2em;
     }
 
     .project-title{
