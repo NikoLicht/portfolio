@@ -4,7 +4,7 @@ import VerticalLine from "./VerticalLine.astro";
 import GalleryTile from "./GalleryTile.astro";
 const {frontmatter} = Astro.props;
 
-let coverImage;
+let coverImage : any = "";
 if (frontmatter.mainMediaType == "image"){
     let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}').then(files => {
         files.map((checkFile) => {

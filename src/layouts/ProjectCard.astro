@@ -10,13 +10,13 @@ let coverImg : any;
 let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').then(files => {
     files.map((checkFile) => {
         let match = checkFile.default;
-        console.log("Checking match between " + cover + " and " + match);
+        //console.log("Checking match between " + cover + " and " + match);
     });
     return files.filter(file => file.default.includes(cover));
 }).then( matches => {
-    console.log(matches.length + " is lenght of matching images");
+    //console.log(matches.length + " is lenght of matching images");
     coverImg = matches[0].default;
-    console.log(coverImg);
+    //console.log(coverImg);
 });
 
 ---
