@@ -7,6 +7,7 @@ tech: ["Unity", "C#","Blender", "Python"]
 summary: low-poly mobile one-finger racing game, with image recognition of cars.
 shortText: This is a short, but veeeeery cool text about the game that i have made. Or been part of making
 cover: "farting_pillow"
+order: 90
 applinks: 
   - name: "Apple Appstore"
     link: "https://apps.apple.com/us/app/spotracers-car-racing-game/id1517765834"

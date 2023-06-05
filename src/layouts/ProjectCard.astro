@@ -44,7 +44,7 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').the
         padding: 1vw 1vw 1vw 1vw;
         text-decoration:none;
         transition: background-color 0.3s ease-in-out;
-        aspect-ratio: 1 / 1;
+        max-width:20%;
     }
 
     a{
@@ -61,6 +61,7 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').the
         width: 100%;
         aspect-ratio: 1 / 1;
         object-fit: cover;
+        min-width: min(150px, 100%);
     }
 
     .project-title {
@@ -71,6 +72,7 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').the
 
     .project-summary {
         font-size: 1vi;
+        line-height: calc(1ex / 0.32);
     }
 
     .project-roles {

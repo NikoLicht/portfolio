@@ -33,7 +33,6 @@ const homePage = await import("../pages/index.astro");
         margin: 0;
         padding: 0;
         overflow: hidden;
-        margin-bottom: auto;
         display: flex;
         justify-content: space-around;
         flex-grow: 1;
@@ -45,6 +44,12 @@ const homePage = await import("../pages/index.astro");
         flex-grow: 1;
         padding: 0;
         transition: background-color 0.3s ease-in-out;
+
+        display: flex;
+        align-items:center;
+        justify-content:space-around;
+        text-align:center;
+
     
     }
 
@@ -87,7 +92,7 @@ const homePage = await import("../pages/index.astro");
         li a {
             color: var(--light-color);
             font-size: 2vi;
-            margin-bottom:1em;
         }
+
     }
 </style>
