@@ -168,6 +168,59 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
             gap: 1em;
             padding: 0;
             margin: 0;
+            margin-bottom: 3em;
+        }
+
+        .image-container{
+            width: 90%;
+            height: 100%;
+            min-width: 90%;
+            min-height: 100%;
+        }
+
+        img{
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-section{
+            max-height: 50vh;
+            height: 30vh;
+            overflow: scroll;
+            flex-wrap: nowrap;
+        }
+
+        .one-image-container{
+            display: flex;
+            height: 30vh;
+        }
+
+        .two-image-container{
+            display: flex;
+            height: 30vh;
+        }
+
+        .three-image-container{
+            display: flex;
+            height: 30vh;
+        }
+
+        .four-image-container{
+            display: flex;
+            height: 30vh;
+        }
+
+        .more-image-container{
+            display: flex;
+            height: 30vh;
+            min-height: 100%;
+            min-width: 90%;
+            width: 90%;
+        }
+
+        .more-image-container .image-container{
+            max-height:  100%;
+            max-width: 100%;
         }
     }
 
