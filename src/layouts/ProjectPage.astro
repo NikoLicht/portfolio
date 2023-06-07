@@ -21,7 +21,6 @@ if (frontmatter.mainMediaType == "image"){
 <MainLayout>
     <div slot="top-section" class="top-section-content">
         <div class="content">
-
             <div class="media-container">
                 {frontmatter.mainMediaType === "youtube" ? 
                 <iframe width="1600" height="900" src={frontmatter.mainMediaLink} title={frontmatter.mainMediaName} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> : "" }
@@ -104,7 +103,7 @@ if (frontmatter.mainMediaType == "image"){
     }
 
     .info-field{
-        background-color: var(--egg-color-dark);
+        background-color: var(--egg-color-dark, red);
         display: flex;
         justify-content: space-around;
         align-items:center;
@@ -169,46 +168,6 @@ if (frontmatter.mainMediaType == "image"){
         display: none;
     }
 
-
-.slider-nav {
-  align-items: center;
-  background-color: #ddd;
-  border-radius: 50%;
-  color: #000;
-  display: inline-flex;
-  height: 1.5rem;
-  justify-content: center;
-  padding: .5rem;
-  position: relative;
-  text-decoration: none;
-  width: 1.5rem;
-}
-
-.slider-nav:hover,
-.slider-nav:active {
-  background-color: #000;
-  color: #fff;
-}
-
-.slide-1 {
-  background-color: #fdc;
-}
-
-.slide-2 {
-  background-color: #bfd;
-}
-
-.slide-3 {
-  background-color: #cdf;
-}
-
-.slide-4 {
-  background-color: #dca;
-}
-
-.slide-5 {
-  background-color: #ffc;
-}
 
     @media only screen and (max-width: 1200px) {
 
