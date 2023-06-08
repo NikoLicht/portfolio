@@ -7,7 +7,7 @@ console.log(roles);
 console.log("looking for: " + cover);
 let coverImg : any;
 
-let images = await Astro.glob('../images/projects/**/*.{png,jpeg,gif,webp}').then(files => {
+let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}').then(files => {
     files.map((checkFile) => {
         let match = checkFile.default;
         //console.log("Checking match between " + cover + " and " + match);

@@ -5,7 +5,7 @@ roles: ["Fontend", "Backend", "Designer"]
 date: 2019
 tech: ["React", "Socket.io","Sqlite3", "Node", "Python"]
 summary: A website where users could simultanously move words from the news around in order to create new sentences, and save for all user to see. 
-shortText: This was my master thesis project. Basically I wanted to create an online cooperative version of 'magnetic poetry' based on recent news, as a tool for critiquing society
+shortText: This was my master thesis project. Basically I wanted to create an online cooperative version of 'magnetic poetry' based on recent news, as a tool for critiquing society. In the end I made it work, even the simultanous co-operation.
 cover: "udvist"
 order: 2
 applinks: 

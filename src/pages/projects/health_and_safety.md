@@ -1,18 +1,16 @@
 ---
 layout: ../../layouts/ProjectPage.astro
-title: Arbejds Miljø Centret
-roles: ["3D Artist", "Techical Artist"]
-date: 2023 - now
-tech: ["Unity", "C#","Blender", "Python"]
-summary: low-poly mobile one-finger racing game, with image recognition of cars.
-shortText: This is a short, but veeeeery cool text about the game that i have made. Or been part of making
-cover: "farting_pillow"
+title: OHS games
+roles: ["3D Artist", "Game Developer"]
+date: 2017 - 2019
+tech: ["Unity", "C#","Blender"]
+summary: A game for 'Arbejds Miljø Centret' that teaches about appropriate workplace behavior and optimal working conditions.
+shortText: I worked on this game and job during my masters. For this project, I made countless animations for different situations in the game, as well as all 3D assets. In the end the project was discontinued though.
+cover: "ohs_games_cover"
 order: 90
 applinks: 
   - name: "Apple Appstore"
-    link: "https://apps.apple.com/us/app/spotracers-car-racing-game/id1517765834"
-  - name: "Google Play"
-    link: "https://play.google.com/store/apps/details?id=com.levelupgarage.spotracers"
+    link: https://apps.apple.com/us/app/id1428677261
 
 mainMediaName: SpotRacers Trailer on youtube
 mainMediaLink: "https://www.youtube.com/watch?v=pAdEDc6Jkug"
