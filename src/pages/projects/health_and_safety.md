@@ -13,7 +13,7 @@ applinks:
     link: https://apps.apple.com/us/app/id1428677261
 
 mainMediaName: SpotRacers Trailer on youtube
-mainMediaLink: "https://www.youtube.com/watch?v=pAdEDc6Jkug"
+mainMediaLink: "https://www.youtube.com/embed?v=pAdEDc6Jkug"
 mainMediaType: "youtube"
 
 media:
