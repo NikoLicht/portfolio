@@ -156,9 +156,10 @@ const heroImg = (await import('../images/info/full_figure_extended.png')).defaul
     }
 
 
-    @media all (min-width: 1200px){
+    @media only screen and (min-width: 1200px) and (min-aspect-ratio: 1440/1050){
         #me_image{
             object-position: 0 -11vw;
+            color: red;
         }
     }
 
