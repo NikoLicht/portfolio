@@ -156,7 +156,14 @@ const heroImg = (await import('../images/info/full_figure_extended.png')).defaul
     }
 
 
-    @media only screen and (min-width: 400) and (orientation: portrait){
+    @media all (min-width: 1200px){
+        #me_image{
+            object-position: 0 -11vw;
+        }
+    }
+
+
+    @media only screen and (max-width: 600px) and (orientation: portrait) {
         .projects{
             padding: 2em;
             gap: 0.5em;
