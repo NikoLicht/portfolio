@@ -19,6 +19,9 @@ mainMediaLink: "https://www.youtube.com/embed/pAdEDc6Jkug"
 mainMediaType: "youtube"
 
 media:
+  - title: Tech-Art Scripting
+    text: On certain occations, I have created tooling for myself, to improve the workflow. Most times, it will be an extension to blender, that can rename, export, or precisely do a very repetetive action. I am also an avid user of the terminal, where i use ffmpeg, ImageMagick, vim or similar to accomplish a certain task. 
+    paths: [] 
   - title: Interesting Interactions
     text: "The prarie tracks was the start of when I really began to make some interesting interactions. Over a long time i had buit a system for trigger based interactions with the levels. For instance the board wiggling in the wind, as the truck drives past it"
     paths: [track_offroad3_bridge_gif, track_offroad3_gas_station_gif, track_offroad3_sign_gif]

@@ -157,6 +157,7 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
 
 
     @media only screen and (max-width: 1200px) {
+
         
         .gallery-tile{
             display: grid;
@@ -176,6 +177,7 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
             height: 100%;
             min-width: 90%;
             min-height: 100%;
+
         }
 
         img{
@@ -183,12 +185,23 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
             display: block;
         }
 
+        .image-container img{
+            transition: none;
+        }
+
+        .image-container:hover img {
+            transform: none;
+        }
+
         .image-section{
             max-height: 50vh;
             height: 30vh;
-            overflow: scroll;
             flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: scroll;
         }
+
+
 
         .one-image-container{
             display: flex;
@@ -215,7 +228,7 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
             height: 30vh;
             min-height: 100%;
             min-width: 90%;
-            width: 90%;
+            width: 100%;
         }
 
         .more-image-container .image-container{
