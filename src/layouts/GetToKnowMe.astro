@@ -1,0 +1,40 @@
+---
+import MainLayout from "./MainLayout.astro";
+const {frontmatter} = Astro.props;
+import GalleryTile from "./GalleryTile.astro";
+---
+
+
+<MainLayout>
+    <div slot="top-section">
+        {
+                frontmatter.overview.map((mediaSection : any) => <GalleryTile {mediaSection}></GalleryTile>)
+        }
+    </div>
+    <div slot="bottom-section">
+    </div>
+</MainLayout>
+
+
+<style>
+    .contact-list{
+        display: flex;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4em;
+    }
+
+
+    .contact-container{
+        flex-grow: 3;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .double-line{
+        border: 0;
+        border-top: 3px double #333;
+    }
+</style>

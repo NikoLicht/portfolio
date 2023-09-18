@@ -4,19 +4,27 @@ const imageSectionClasses : string[] = ["no-image", "one-image-container", "two-
 
 let sources : Record<string, string> = {};
 
-let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}').then(files => {
-    files.map((checkFile) => {
-            for (let index = 0; index < mediaSection.paths.length; index++) {
-                let matchName : string = mediaSection.paths[index];
-                if(checkFile.default.includes(matchName)){
-                    sources[matchName] = checkFile.default;
+if (mediaSection.paths != undefined){
+    console.log("checking images");
+    let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}').then(files => {
+        files.map((checkFile) => {
+                for (let index = 0; index < mediaSection.paths.length; index++) {
+                    let matchName : string = mediaSection.paths[index];
+                    if(checkFile.default.includes(matchName)){
+                        sources[matchName] = checkFile.default;
+                    }
                 }
-            }
+            });
         });
-    });
+}
 
 
-let index = mediaSection.paths.length;
+let index : number = 0;
+if(mediaSection.paths != null){
+    index = mediaSection.paths.length;
+}
+
+
 
 if (index >= imageSectionClasses.length) 
     index = imageSectionClasses.length - 1;
@@ -25,13 +33,16 @@ if (index < 0 )
     index = 0;
 
 const imageSectionClass : string = imageSectionClasses[index];
-const numberOfItems : number = mediaSection.paths.length;
+let numberOfItems : number = 0;
+if (mediaSection.paths != null){
+    numberOfItems = mediaSection.paths.length;
+}
 const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
 ---
 
 <div class="gallery-tile">
     <div class={"image-section " + imageSectionClass}>
-        {mediaSection.paths.map((path: string) => 
+        {mediaSection.paths && mediaSection.paths.map((path: string) => 
             <div class="image-container">
                 <img src={sources[path]} alt="cool images about stuff"/>
             </div>
