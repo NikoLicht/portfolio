@@ -78,20 +78,28 @@ const homePage = await import("../pages/index.astro");
             position: sticky;
             top: 0;
             background-color: var(--dark-color);
+            height: 10vh;
         }
 
         .navigation{
             padding-bottom:0;
             margin-bottom:0;
+            display: flex; /* Add this */
+            flex-wrap: wrap; /* Add this */
         }
 
         .nav-wrapper{
             width: 100%;
         }
 
+        li {
+            flex-basis: 50%;
+        }
+
         li a {
             color: var(--light-color);
-            font-size: 2vi;
+            font-size: 4vi;
+
         }
 
     }

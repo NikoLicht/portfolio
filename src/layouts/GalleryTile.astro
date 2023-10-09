@@ -2,7 +2,9 @@
 const {mediaSection} = Astro.props;
 const imageSectionClasses : string[] = ["no-image", "one-image-container", "two-image-container", "three-image-container", "four-image-container", "more-image-container"]
 
+
 let sources : Record<string, string> = {};
+
 
 if (mediaSection.paths != undefined){
     console.log("checking images");
@@ -39,6 +41,9 @@ if (mediaSection.paths != null){
 }
 const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
 ---
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
 <div class="gallery-tile">
     <div class={"image-section " + imageSectionClass}>
@@ -167,7 +172,7 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
 
 
 
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 600px) {
 
         
         .gallery-tile{
