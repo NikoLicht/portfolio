@@ -4,7 +4,7 @@ title: contact me
 summary: Im friendly don't worry
 order: 1
 
-funnyTitle: "Get in touch, or just plain up stalk me."
+funnyTitle: "I would love to get in touch here"
 
 contactPoints:
   - title: LinkedIn
