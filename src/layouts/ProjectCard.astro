@@ -27,11 +27,13 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}')
     <div class="project-roles">
         <p class="role slanted-box">{role}</p>
     </div>
-    <p class="project-summary">{post.frontmatter.summary}</p>
+    <div class="project-summary-wrapper">
+        <p class="project-summary">{post.frontmatter.summary}</p>
+    </div>
     <div class="project-tech">
         {
             technologies.map((tech :string) => {
-                return <p class="role slanted-box">{tech}</p>
+                return <p class="tech slanted-box">{tech}</p>
             })
         }
     </div>
@@ -43,9 +45,12 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}')
         padding: 1vw 1vw 1vw 1vw;
         text-decoration:none;
         transition: background-color 0.3s ease-in-out;
-        max-width:20%;
-        display: block;
-        margin-top: 5%;
+        max-width:23%;
+        min-width: 200px;
+
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     a{
@@ -58,6 +63,11 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}')
         background-color: var(--dark-color);
     }
 
+    .project:hover .project-roles .role{
+            color: var(--egg-color);
+            text-decoration: underline var(--egg-color);
+    }
+
     img {
         width: 100%;
         aspect-ratio: 1 / 1;
@@ -66,14 +76,22 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}')
     }
 
     .project-title {
-        font-size: 2vi;
+        font-size: 1.5em;
         text-transform: uppercase;
         font-weight: 600;
+        margin: 0;
     }
 
+    .project-summary-wrapper{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 2;
+
+    }
     .project-summary {
-        font-size: 1vi;
-        line-height: calc(1ex / 0.32);
+        font-size: .9em;
     }
 
 
@@ -84,33 +102,42 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}')
         text-align: center;
         margin-bottom: 0;
 
+
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        align-content: flex-end;
+        gap: 2px;
+        
 
-        p {
-            color: var(--egg-color);
-            background-color: var(--dark-color);
-            min-width: 3rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            margin-top: 0.2rem;
-            margin-bottom: 0.2rem;
-            flex-basis: auto;
-        }
+    }
+
+    .tech{
+
+        color: var(--egg-color);
+        background-color: var(--dark-color);
+        min-width: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0;
+        flex-grow: 1;
     }
 
     .project-roles {
         list-style-type: none;
         margin: auto;
         padding: 0;
+        width: 100%;
 
         .role{
+            text-decoration: underline;
+            color: var(--dark-color);
             margin: 0;
             padding: 0;
-            text-align: right;
+            float: right;
+
         }
     }
 

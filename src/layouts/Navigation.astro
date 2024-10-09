@@ -11,7 +11,7 @@ const homePage = await import("../pages/index.astro");
                 infoPages.map( (info) => <li><a href={info.url}>{info.frontmatter.title}</a></li>)
             }
             <li><a href="https://drive.google.com/file/d/1o4dnxBPjSL0Av3dnz7edAm8XmdJ-o_3O/view?usp=drive_link" target="_blank">CV</a></li>
-            <li><a href="https://photos.google.com/share/AF1QipNmj_b66m4hsL4wxDlr063fvHkjUyZWybj5Xevx31tC7Y-cydDFLzlJwi9_V-VZjw?key=NFk3TERqUVlyY3hIa0FNaHlTcEJycjhYM2MzQVln" target="_blank">gallery</a></li>
+            <li><a href="https://photos.google.com/share/AF1QipNmj_b66m4hsL4wxDlr063fvHkjUyZWybj5Xevx31tC7Y-cydDFLzlJwi9_V-VZjw?key=NFk3TERqUVlyY3hIa0FNaHlTcEJycjhYM2MzQVln" target="_blank">Analog Photos</a></li>
         </nav>
     </div>
 </div>
@@ -24,10 +24,10 @@ const homePage = await import("../pages/index.astro");
     }
 
     .nav-wrapper{
-        width: 40%;
-        min-width: 500px;
+        width: 100%;
         display: flex;
         justify-content: flex-end;
+        max-width: 100%;
     }
 
     .navigation {
@@ -46,7 +46,7 @@ const homePage = await import("../pages/index.astro");
         flex-basis: content;
         flex-grow: 1;
         padding: 0;
-        background-color: #ddd;
+        background-color: unset;
         transition: background-color 0.3s ease-in-out;
         margin-right: 2px;
 
@@ -61,6 +61,11 @@ const homePage = await import("../pages/index.astro");
     li:hover{
         background-color: var(--dark-color);
         color: var(--egg-color-dark);
+
+        a {
+            color: var(--egg-color-dark);
+            transform:skew(-20deg);
+        }
     }
 
     li a {
@@ -74,6 +79,7 @@ const homePage = await import("../pages/index.astro");
         text-transform: uppercase;
         transform:skew(0deg);
         transition: transform 0.1s ease-in-out;
+        width: 100%;
     }
 
     li a:hover{
@@ -84,17 +90,9 @@ const homePage = await import("../pages/index.astro");
     @media only screen and (max-width: 600px) {
         .navigation-container{
             position: relative;
-            background-color: var(--dark-color);
             justify-content: center;
             width: 100%;
-        }
 
-        .navigation{
-            padding-bottom:0;
-            margin-bottom:0;
-            display: flex; /* Add this */
-            flex-wrap: wrap; /* Add this */
-            margin: auto;
         }
 
         .nav-wrapper{
@@ -102,14 +100,25 @@ const homePage = await import("../pages/index.astro");
             min-width: 0;
         }
 
+        .navigation{
+            padding-bottom:0;
+            margin-bottom:0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+        }
+
+
         li {
             flex-basis: 100%;
             margin-right: 0;
         }
 
         li a {
-            color: var(--dark-color);
+            background-color: var(--dark-color);
+            color: var(--light-color);
             font-size: 4vi;
+            width: 100%;
 
         }
 
