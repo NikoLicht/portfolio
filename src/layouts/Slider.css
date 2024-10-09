@@ -1,0 +1,22 @@
+.slider {
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 40px;
+    overflow-x: auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.slide {
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    aspect-ratio: 1;
+    background: rgb(199, 199, 199);
+    margin-right: 5px;
+    flex-shrink: 0;
+    scroll-snap-align: left;
+    object-fit: cover;
+    object-position: 50% 25%;
+}

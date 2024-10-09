@@ -1,8 +1,8 @@
 ---
 const {post} = Astro.props;
 const cover = post.frontmatter.cover;
-const roles = post.frontmatter.roles;
-console.log(roles);
+const role = post.frontmatter.role;
+const technologies = post.frontmatter.tech;
 
 console.log("looking for: " + cover);
 let coverImg : any;
@@ -24,11 +24,14 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}')
 <a href={post.url} class="project">
     <img src={coverImg} alt={"An awesome-looking cover photo for '" + post.frontmatter.title + "'"}>
     <p class="project-title">{post.frontmatter.title}</p>
-    <p class="project-summary">{post.frontmatter.summary}</p>
     <div class="project-roles">
+        <p class="role slanted-box">{role}</p>
+    </div>
+    <p class="project-summary">{post.frontmatter.summary}</p>
+    <div class="project-tech">
         {
-            roles.map((role :string) => {
-                return <p class="role slanted-box">{role}</p>
+            technologies.map((tech :string) => {
+                return <p class="role slanted-box">{tech}</p>
             })
         }
     </div>
@@ -65,6 +68,7 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}')
     .project-title {
         font-size: 2vi;
         text-transform: uppercase;
+        font-weight: 600;
     }
 
     .project-summary {
@@ -72,11 +76,13 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}')
         line-height: calc(1ex / 0.32);
     }
 
-    .project-roles {
+
+    .project-tech {
         list-style-type: none;
         margin: auto;
         padding: 0;
         text-align: center;
+        margin-bottom: 0;
 
         display: flex;
         flex-wrap: wrap;
@@ -84,14 +90,29 @@ let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}')
         align-items: center;
         align-content: center;
 
+        p {
+            color: var(--egg-color);
+            background-color: var(--dark-color);
+            min-width: 3rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+            flex-basis: auto;
+        }
     }
 
-    .role{
-        margin: 0;
+    .project-roles {
+        list-style-type: none;
+        margin: auto;
         padding: 0;
-        padding-bottom: 0.5em;
-    }
 
+        .role{
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+    }
 
     .slanted-box :global{
         transform: skewX(-15deg);

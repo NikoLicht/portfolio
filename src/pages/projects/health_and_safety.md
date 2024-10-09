@@ -2,9 +2,10 @@
 layout: ../../layouts/ProjectPage.astro
 title: OHS games
 roles: ["3D Artist", "Game Developer"]
+role: Game Developer
 date: 2017 - 2019
 tech: ["Unity", "C#","Blender"]
-summary: A game for 'Arbejds Miljø Centret' that teaches about appropriate workplace behavior and optimal working conditions.
+summary: A game for 'Arbejdsmiljøcentret' that teaches about appropriate workplace behavior and optimal working conditions.
 shortText: I worked on this game and job during my masters. For this project, I made countless animations for different situations in the game, as well as all 3D assets. In the end the project was discontinued though.
 cover: "ohs_games_cover"
 order: 90

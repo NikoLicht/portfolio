@@ -1,10 +1,8 @@
 ---
+import Slider from './Slider';
 const {mediaSection} = Astro.props;
-const imageSectionClasses : string[] = ["no-image", "one-image-container", "two-image-container", "three-image-container", "four-image-container", "more-image-container"]
-
-
 let sources : Record<string, string> = {};
-
+let imagePaths : Array<string> = new Array();
 
 if (mediaSection.paths != undefined){
     console.log("checking images");
@@ -14,44 +12,16 @@ if (mediaSection.paths != undefined){
                     let matchName : string = mediaSection.paths[index];
                     if(checkFile.default.includes(matchName)){
                         sources[matchName] = checkFile.default;
+                        imagePaths.push(checkFile.default);
                     }
                 }
             });
         });
 }
-
-
-let index : number = 0;
-if(mediaSection.paths != null){
-    index = mediaSection.paths.length;
-}
-
-
-
-if (index >= imageSectionClasses.length) 
-    index = imageSectionClasses.length - 1;
-
-if (index < 0 ) 
-    index = 0;
-
-const imageSectionClass : string = imageSectionClasses[index];
-let numberOfItems : number = 0;
-if (mediaSection.paths != null){
-    numberOfItems = mediaSection.paths.length;
-}
-const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
 ---
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
 <div class="gallery-tile">
-    <div class={"image-section " + imageSectionClass}>
-        {mediaSection.paths && mediaSection.paths.map((path: string) => 
-            <div class="image-container">
-                <img src={sources[path]} alt="cool images about stuff"/>
-            </div>
-        )}
+    <div class="image-section">
+        <Slider images={imagePaths} ></Slider>
     </div>
     <div class="text-section">
         <h1 class="gallery-title">{mediaSection.title}</h1>
@@ -61,23 +31,23 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
 
 
 
-<style define:vars={{numberOfItems, imageContainerHeight}}>
-    .gallery-tile{
+<style>
+    .gallery-tile {
         margin: 3em;
         background-color: var(--egg-color-dark);
-        max-height: 70vh;
+        max-height: 70vh; /* Already limits overall height */
         min-height: 20vh;
         padding: 2em;
 
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 6fr 4fr; /* Image section takes up more space */
         grid-template-rows: 1fr;
-        grid-template-areas: 
-        " image info ";
+        grid-template-areas:
+            "image info";
         gap: 1em;
     }
 
-    .text-section{
+    .text-section {
         grid-area: info;
         padding: 1em;
         display: flex;
@@ -88,169 +58,47 @@ const imageContainerHeight : number = 100 / Math.ceil(numberOfItems / 3);
 
     .image-section {
         grid-area: image;
-        max-height: inherit;
-
-    }
-
-    .no-image{
-        display: none;
-    }
-
-    .one-image-container{
+        max-height: 100%; /* Keeps image section within the parent container */
+        max-width: 100%; /* Ensures it doesn’t overflow horizontally */
+        overflow: hidden; /* Ensures no overflow from the image content */
         display: flex;
         justify-content: center;
         align-items: center;
-        align-content: center;
     }
 
-    .two-image-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 0;
-
+    .image-section img {
+        width: 100%; /* Makes sure images fill the available width */
+        height: auto; /* Keeps aspect ratio */
+        object-fit: cover; /* Adjusts image display to avoid overflow */
     }
 
-    .three-image-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 0;
-    }
-
-    .four-image-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0;
-
-    }
-
-    .more-image-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        align-content: stretch;
-
-        height: 50vh;
-
-    }
-
-    .more-image-container .image-container{
-        max-height:  calc(1% * var(--imageContainerHeight));
-        max-width: calc(200% / var(--numberOfItems));
-    }
-
-
-
-
-    .image-container {
-        overflow: hidden;
-        max-height: 100%;
-    }
-
-    .image-container img {
-        transition: transform 0.3s ease;
-    }
-
-    .image-container:hover img {
-        transform: scale(1.5);
-    }
-
-    .image-container:not(:hover) img {
-        transform: scale(1);
-    }
-
-
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        aspect-ratio: 1;
-    }
-
-
-
+    /* Mobile View */
     @media only screen and (max-width: 600px) {
-
-        
-        .gallery-tile{
-            display: grid;
+        .gallery-tile {
             grid-template-columns: 1fr;
             grid-template-rows: 3fr 2fr;
-            grid-template-areas: 
-            " image"
-            " info ";
+            grid-template-areas:
+                "image"
+                "info";
             gap: 1em;
             padding: 0;
             margin: 0;
             margin-bottom: 3em;
         }
 
-        .image-container{
-            width: 90%;
-            height: 100%;
-            min-width: 90%;
-            min-height: 100%;
-
-        }
-
-        img{
-            object-fit: cover;
-            display: block;
-        }
-
-        .image-container img{
-            transition: none;
-        }
-
-        .image-container:hover img {
-            transform: none;
-        }
-
-        .image-section{
-            max-height: 50vh;
+        .image-section {
+            max-height: 50vh; /* Limits height for mobile view */
             height: 30vh;
             flex-wrap: nowrap;
             width: 100%;
-            overflow-x: scroll;
+            overflow-x: scroll; /* Ensures the slider can scroll if necessary */
         }
 
-
-
-        .one-image-container{
-            display: flex;
-            height: 30vh;
-        }
-
-        .two-image-container{
-            display: flex;
-            height: 30vh;
-        }
-
-        .three-image-container{
-            display: flex;
-            height: 30vh;
-        }
-
-        .four-image-container{
-            display: flex;
-            height: 30vh;
-        }
-
-        .more-image-container{
-            display: flex;
-            height: 30vh;
-            min-height: 100%;
-            min-width: 90%;
-            width: 100%;
-        }
-
-        .more-image-container .image-container{
-            max-height:  100%;
-            max-width: 100%;
+        .image-section img {
+            width: auto; /* Ensures images in mobile view don't stretch weirdly */
+            height: 100%; /* Keeps them scaled properly within the available height */
         }
     }
+
 
 </style>

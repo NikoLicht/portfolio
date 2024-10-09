@@ -2,6 +2,7 @@
 layout: ../../layouts/ProjectPage.astro
 title: Computer Clutter organizer
 roles: ["Programmer"]
+role: Developer
 date: 2021
 tech: ["Python", "DOS/Windows Shell Script"]
 summary: A script that cleans up the often cluttered folders, based on file types, and time-to-live per folder.

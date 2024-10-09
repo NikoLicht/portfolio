@@ -73,20 +73,20 @@ const homePage = await import("../pages/index.astro");
         font-family: 'Roboto Mono', monospace;
         text-transform: uppercase;
         transform:skew(0deg);
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.1s ease-in-out;
     }
 
     li a:hover{
         color: var(--egg-color-dark);
-        transform:skew(-30deg);
+        transform:skew(-20deg);
     }
 
     @media only screen and (max-width: 600px) {
         .navigation-container{
-            position: sticky;
-            top: 0;
+            position: relative;
             background-color: var(--dark-color);
-            height: 10vh;
+            justify-content: center;
+            width: 100%;
         }
 
         .navigation{
@@ -94,18 +94,21 @@ const homePage = await import("../pages/index.astro");
             margin-bottom:0;
             display: flex; /* Add this */
             flex-wrap: wrap; /* Add this */
+            margin: auto;
         }
 
         .nav-wrapper{
             width: 100%;
+            min-width: 0;
         }
 
         li {
-            flex-basis: 50%;
+            flex-basis: 100%;
+            margin-right: 0;
         }
 
         li a {
-            color: var(--light-color);
+            color: var(--dark-color);
             font-size: 4vi;
 
         }

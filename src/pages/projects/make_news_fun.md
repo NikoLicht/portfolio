@@ -2,6 +2,7 @@
 layout: ../../layouts/ProjectPage.astro
 title: Make News Fun
 roles: ["Fontend", "Backend", "Designer"]
+role: Designer and Developer
 date: 2019
 tech: ["React", "Socket.io","Sqlite3", "Node", "Python"]
 summary: A website where users could simultanously move words from the news around in order to create new sentences, and save for all user to see. 

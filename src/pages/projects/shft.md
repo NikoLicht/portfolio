@@ -2,8 +2,9 @@
 layout: ../../layouts/ProjectPage.astro
 title: shft
 roles: ["3D Artist", "Designer"]
+role: Digital Artist
 date: 2013 - 2017
-tech: ["Blender", "html/css/js", "CAD", "Illustrator"]
+tech: ["Blender", "html/css/js", "Illustrator"]
 summary: A startup company that produce a virtual running coach, that can teach runners to run better.
 shortText: In this position I created a lot of animations for investor pitches, product explanations, kickstarter and websites.
 cover: "shft_cover_gif"
