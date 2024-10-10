@@ -28,7 +28,9 @@ let {title} = Astro.props;
 <style>
     :root{
     --dark-color: rgb(37, 37, 48);
-    --light-color: rgb(255, 255, 255);
+    --medium-dark: rgb(180, 180, 180);
+    --light-color: rgb(208, 226, 226);
+    --gradient-light: rgb(223, 223, 223);
     --egg-color: rgb(255, 255, 255);
     --egg-color-dark: rgb(230, 230, 230);
     --egg-color-saturated: rgb(203, 207, 218);
@@ -49,13 +51,13 @@ let {title} = Astro.props;
     .gradient-top-down{
         background-color: var(--light-color);
         background: var(--light-color);
-        background: linear-gradient(24deg, var(--egg-color-saturated) 0%, var(--light-color) 80%); 
+        background: linear-gradient(24deg, var(--egg-color-saturated) 0%, var(--gradient-light) 80%); 
     }
     
     .gradient-bottoms-up{
         background-color: var(--light-color);
         background: var(--light-color);
-        background: linear-gradient(24deg, var(--light-color) 0%, var(--egg-color-saturated) 80%); 
+        background: linear-gradient(24deg, var(--gradient-light) 0%, var(--egg-color-saturated) 80%); 
     }
 
     .content {

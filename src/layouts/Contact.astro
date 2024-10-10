@@ -12,59 +12,149 @@ const {frontmatter} = Astro.props;
             frontmatter.contactPoints.map((contact :any) => 
             <div class="contact-container">
                 <div class="contact">
-                    <a href={contact.link}>{contact.title}</a>
+                    <a href={contact.link}>
+                        <p>
+                        {contact.title}
+                        </p>
+                    </a>
                 </div>
             </div>
             )
         }
             <div class="contact-container">
                 <div class="contact">
-                    <p>licht.nikolaj (at) gmail.com</p>
+                    <a href="mailto:?subject=Niko,%20Lets%20go%20bowling&amp;body=Or%20just%20get%20in%20touch">
+                        <p>licht.nikolaj (at) gmail.com</p>
+                    </a>
                 </div>
             </div>
 
             <div class="contact-container">
                 <div class="contact">
-                    <p class="math">  10 624 605</p>
-                    <p class="math">+ 10 000 020</p>
-                    <hr>
-                    <p class="math">my phone num</p>
-                    <hr class="double-line">
+                    <div class="math-container">
+                        <p class="math">  10 624 605</p>
+                        <p class="math">+ 10 000 020</p>
+                        <hr class="math">
+                        <p class="math">my phone num</p>
+                        <hr class="math double-line">
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
     <div slot="bottom-section">
-        <slot> </slot>
+        <slot> 
+        </slot>
     </div>
 </MainLayout>
 
 
 <style>
+    h1 {
+        width: 50%;
+        text-align: center;
+        margin: 50px auto 20px auto;
+    }
+
     .contact-list{
-        display: flex;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 4em;
+        width: 50%;
+        max-width: 1000px;
+        aspect-ratio: 1;
+
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        margin: 50px auto 0 auto;
     }
 
 
     .contact-container{
-        flex-grow: 3;
+        background-color: var(--egg-color-dark);
         font-size: 1.5rem;
         text-align: center;
+        aspect-ratio: 1;
+
+    }
+
+    .contact{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .contact-container a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .math-container{
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .math-container:hover{
+        background-color: var(--dark-color) ;
+        color: beige;
     }
 
     .math{
+        flex-grow: 0;
+        flex-shrink: 1;
         text-align: right;
-        padding-right: 20%;
+        width: 70%;
+        margin: 0;
     }
+
+    .contact-container a:hover{
+        background-color: var(--dark-color) ;
+        color: beige;
+    }
+
+    .contact-container a p {
+        flex-grow: 1;
+        margin: 0;
+        font-size: 1rem;
+    }
+
 
     .double-line{
         border: 0;
         border-top: 10px double #333;
+    }
+
+
+
+
+    @media only screen and (max-width: 600px) {
+
+    h1 {
+        width: 80%;
+    }
+
+    .contact-list{
+        width: 80%;
+        max-width: 1000px;
+        aspect-ratio: 1;
+
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+
+        margin: 50px auto 0 auto;
+    }
     }
 </style>

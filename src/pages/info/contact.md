@@ -4,11 +4,11 @@ title: contact me
 summary: Im friendly don't worry
 order: 1
 
-funnyTitle: "I would love to get in touch here"
+funnyTitle: "You can reach me here"
 
 contactPoints:
   - title: LinkedIn
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/nikolaj-bundgaard-licht-1102a589/
   - title: Instagram
     link: https://www.instagram.com/lichtdoingstuff/
   - title: Soundcloud
