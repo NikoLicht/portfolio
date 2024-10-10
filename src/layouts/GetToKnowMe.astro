@@ -2,16 +2,17 @@
 import MainLayout from "./MainLayout.astro";
 const {frontmatter} = Astro.props;
 import GalleryTile from "./GalleryTile.astro";
+import GradientBox from "./GradientBox.astro";
 ---
 
 
 <MainLayout>
-    <div slot="top-section">
-        {
-                frontmatter.overview.map((mediaSection : any) => <GalleryTile {mediaSection}></GalleryTile>)
-        }
-    </div>
-    <div slot="bottom-section">
+    <div>
+        <GradientBox showNavigation={true}>
+            {
+                    frontmatter.overview.map((mediaSection : any) => <GalleryTile {mediaSection}></GalleryTile>)
+            }
+        </GradientBox>
     </div>
 </MainLayout>
 

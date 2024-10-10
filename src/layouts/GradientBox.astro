@@ -1,0 +1,39 @@
+---
+import Navigation from "./Navigation.astro";
+const {showNavigation}  = Astro.props;
+---
+
+<div class="section gradient-top-down">
+    {showNavigation && <Navigation class="navigation"></Navigation>}
+    <slot />
+</div>
+
+
+<style>
+    .section{
+        margin: 2em auto 1em auto;
+        width: 100%;
+        max-width: 1200px;
+        padding: 1em;
+    }
+
+    .navigation{
+        margin-bottom: 3em;
+    }
+
+    .gradient-top-down{
+        background-color: var(--light-color);
+        background: var(--light-color);
+        background: linear-gradient(24deg, var(--egg-color-saturated) 0%, var(--gradient-light) 80%); 
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .section{
+            margin: 1em auto 1em auto;
+            width: 94%;
+            padding: .5em;
+        }
+    }
+
+</style>

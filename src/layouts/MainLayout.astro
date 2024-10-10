@@ -1,6 +1,7 @@
 ---
 import Navigation from "./Navigation.astro";
 let {title} = Astro.props;
+import GradientBox from "./GradientBox.astro"
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,14 +13,7 @@ let {title} = Astro.props;
     </head>
     <body>
         <div class="content">
-            <div class="section gradient-top-down">
-                <Navigation></Navigation>
-                <slot name="top-section"/>
-            </div>
-
-            <div class="section gradient-bottoms-up">
-                <slot name="bottom-section"/>
-            </div>
+            <slot>
         </div>
     </body>
 </html>
@@ -65,7 +59,7 @@ let {title} = Astro.props;
         width: 100%;
         margin: auto;
         font-family: 'Roboto Mono', monospace;
-        padding-top: 3em;
+        padding-top: 1em;
         padding-bottom: 3em;
     }
 
@@ -76,7 +70,7 @@ let {title} = Astro.props;
 
     @media only screen and (max-width: 600px) {
         .content{
-            padding-top: 1em;
+            padding-top: 0em;
         }
 
         .section{

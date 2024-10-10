@@ -3,44 +3,45 @@ import MainLayout from "../layouts/MainLayout.astro";
 import * as info from '../pages/info/get_to_know_me.md';
 import ProjectCard from "../layouts/ProjectCard.astro";
 let allProjects = await Astro.glob("../pages/projects/*.md");
+import GradientBox from "../layouts/GradientBox.astro";
 
 
 
 
 const heroImg = (await import('../images/info/full_figure_extended.png')).default;
 ---
-
 <MainLayout title="Nikolaj Licht // Creative Dev">
+    <div>
+        <GradientBox showNavigation={true}>
+            <div class="top-section-content .background">
+                <div class="me_heading upper-left">
+                    <h1>{info.frontmatter.job_title}</h1>
+                </div>
 
-    <div slot="top-section" class="top-section-content .background">
-        <div class="me_heading upper-left">
-            <h1>{info.frontmatter.job_title}</h1>
-        </div>
+                <div class="me_heading" id="me_image_container">
+                    <img id="me_image" src={heroImg} width="2000" alt="Photograph of Nikolaj Licht, very employable looking"/>
+                </div>
 
-        <div class="me_heading" id="me_image_container">
-            <img id="me_image" src={heroImg} width="2000" alt="Photograph of Nikolaj Licht, very employable looking"/>
-        </div>
-
-        <div class="me_heading lower-right">
-            <h1>{info.frontmatter.name_first}</h1>
-            <h1>{info.frontmatter.name_last}</h1>
-        </div>
+                <div class="me_heading lower-right">
+                    <h1>{info.frontmatter.name_first}</h1>
+                    <h1>{info.frontmatter.name_last}</h1>
+                </div>
+            </div>
+        </GradientBox>
+        <GradientBox showNavigation={false}>
+            <div class="bottom-section-content">
+                <h2 class="me_heading projects-title">Projects and Work//</h2>
+                <div class="projects">
+                {
+                    allProjects.sort((a, b) =>{
+                        return a.frontmatter.order - b.frontmatter.order;
+                    }).map((post) => <ProjectCard {post} />)
+                }
+                </div>
+            </div>
+        </GradientBox>
     </div>
-
-
-    <div slot="bottom-section" class="bottom-section-content">
-        <h2 class="me_heading projects-title">Projects and Work//</h2>
-        <div class="projects">
-        {
-            allProjects.sort((a, b) =>{
-                return a.frontmatter.order - b.frontmatter.order;
-            }).map((post) => <ProjectCard {post} />)
-        }
-        </div>
-    </div>
- 
 </MainLayout>
-
 <style>
 
     #me_image_container{

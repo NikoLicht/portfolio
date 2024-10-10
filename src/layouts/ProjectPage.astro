@@ -2,6 +2,7 @@
 import MainLayout from "./MainLayout.astro";
 import VerticalLine from "./VerticalLine.astro";
 import GalleryTile from "./GalleryTile.astro";
+import GradientBox from "./GradientBox.astro"
 const {frontmatter} = Astro.props;
 
 let coverImage : any = "";
@@ -19,55 +20,59 @@ if (frontmatter.mainMediaType == "image"){
 ---
 
 <MainLayout>
-    <div slot="top-section" class="top-section-content">
-        <div class="content">
-            <div class="media-container">
-                {frontmatter.mainMediaType === "youtube" ? 
-                <iframe width="1600" height="900" src={frontmatter.mainMediaLink} title={frontmatter.mainMediaName} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> : "" }
-                {frontmatter.mainMediaType === "image" ? 
-                <img src={coverImage} alt="cool images about stuff"/> : ""}
+    <div>
+        <GradientBox showNavigation={true}>
+            <div class="top-section-content">
+                <div class="content">
+                    <div class="media-container">
+                        {frontmatter.mainMediaType === "youtube" ? 
+                        <iframe width="700" height="300" src={frontmatter.mainMediaLink} title={frontmatter.mainMediaName} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> : "" }
+                        {frontmatter.mainMediaType === "image" ? 
+                        <img src={coverImage} alt="cool images about stuff"/> : ""}
+                    </div>
+
+                    <div class="info-container">
+                        <h1 class="info-field title">{frontmatter.title}</h1>
+                        <div class="info-field date">
+                            <p>{frontmatter.date}</p>
+                        </div>
+                        <div class="info-field roles">
+                            {
+                                frontmatter.roles.map((role) => <p class="multiple-data">{role}</p><VerticalLine class="hide-last"/>)
+                            }
+                        </div>
+                        <div class="info-field tech">
+                            {
+                                frontmatter.tech.map((tech) => <p class="multiple-data">{tech}</p><VerticalLine class="hide-last"/>)
+                            }
+                        </div>
+                        <div class="info-field summary">
+                            <p class="summary-text">{frontmatter.shortText}</p>
+                        </div>
+                        <div class="info-field links">
+                            {
+                                frontmatter.applinks.map((link) => <a class="multiple-data" href={link.link}>{link.name}</a><VerticalLine class="hide-last"/>)
+                            }
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
+        </GradientBox>
+        <GradientBox>
+            <div class="bottom-section-content">
+                <div class="bottom-left gallery">
+                    {
+                        frontmatter.media.map((mediaSection) => <GalleryTile {mediaSection}></GalleryTile>)
+                    }
+                </div>
 
-            <div class="info-container">
-                <h1 class="info-field title">{frontmatter.title}</h1>
-                <div class="info-field date">
-                    <p>{frontmatter.date}</p>
-                </div>
-                <div class="info-field roles">
-                    {
-                        frontmatter.roles.map((role) => <p class="multiple-data">{role}</p><VerticalLine class="hide-last"/>)
-                    }
-                </div>
-                <div class="info-field tech">
-                    {
-                        frontmatter.tech.map((tech) => <p class="multiple-data">{tech}</p><VerticalLine class="hide-last"/>)
-                    }
-                </div>
-                <div class="info-field summary">
-                    <p class="summary-text">{frontmatter.shortText}</p>
-                </div>
-                <div class="info-field links">
-                    {
-                        frontmatter.applinks.map((link) => <a class="multiple-data" href={link.link}>{link.name}</a><VerticalLine class="hide-last"/>)
-                    }
+                <div class="bottom-right">
                 </div>
             </div>
-
-
-        </div>
+        </GradientBox>
     </div>
-
-    <div slot="bottom-section" class="bottom-section-content">
-        <div class="bottom-left gallery">
-            {
-                frontmatter.media.map((mediaSection) => <GalleryTile {mediaSection}></GalleryTile>)
-            }
-        </div>
-
-        <div class="bottom-right">
-        </div>
-    </div>
-
 </MainLayout>
 
 <script src="../js/test.js"> </script>
@@ -100,12 +105,14 @@ if (frontmatter.mainMediaType == "image"){
     .media-container img{
             width: 100%;
             object-fit: contain;
+            max-height: 600px;
     }
 
     .media-container iframe{
         width: 100%;
-        height: 100%;
-        padding: 4em;
+        height: 70%;
+        padding-left: 4em;
+        
     }
 
     .info-field{
@@ -122,7 +129,7 @@ if (frontmatter.mainMediaType == "image"){
     }
 
     .info-container{
-        padding:4em;  
+        padding: 1em 4em 1em 2em;
         grid-area: info;
 
         display: grid;
