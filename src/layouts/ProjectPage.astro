@@ -189,7 +189,7 @@ if (frontmatter.mainMediaType == "image"){
     .content{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 3fr 1fr;
+        /* grid-template-rows: 3fr 1fr; */
         grid-template-areas: 
         " info"
         " image";
@@ -199,6 +199,8 @@ if (frontmatter.mainMediaType == "image"){
 
     .title{
         font-size: 2em;
+        margin: 0;
+        padding: 0 1em 0 1em !important;
     }
 
     .info-container{
@@ -215,6 +217,7 @@ if (frontmatter.mainMediaType == "image"){
 
     .info-field{
         background-color: var(--egg-color-dark);
+        padding: 0;
     }
 }
 
