@@ -2,13 +2,11 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import * as info from '../pages/info/get_to_know_me.md';
 import ProjectCard from "../layouts/ProjectCard.astro";
-let allProjects = await Astro.glob("../pages/projects/*.md");
 import GradientBox from "../layouts/GradientBox.astro";
 
-
-
-
+let allProjects = await Astro.glob("../pages/projects/*.md");
 const heroImg = (await import('../images/info/full_figure_extended.png')).default;
+const moreProjects = await import("../pages/info/more_projects.md");
 ---
 <MainLayout title="Nikolaj Licht // Creative Dev">
     <div>
@@ -38,6 +36,15 @@ const heroImg = (await import('../images/info/full_figure_extended.png')).defaul
                     }).map((post) => <ProjectCard {post} />)
                 }
                 </div>
+            </div>
+        </GradientBox>
+        <GradientBox showNavigation{false}>
+            <div class="show-me-more-container">
+                <a class="show-me-more-link" href={moreProjects.url}>
+                    <p class="show-me-more-text">
+                        SHOW ME MORE PROJECTS
+                    </p>     
+                </a>
             </div>
         </GradientBox>
     </div>
@@ -155,6 +162,38 @@ const heroImg = (await import('../images/info/full_figure_extended.png')).defaul
         width: 100%;
         bottom:0;
         flex: 0 0 5em;;
+    }
+
+    .show-me-more-container{
+        background-color: var(--egg-color);
+        height: 100px;
+        margin: 2em;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .show-me-more-container:hover{
+        background-color: var(--dark-color);
+
+        .show-me-more-link{
+            color: var(--egg-color);
+            font-weight: 600;
+        }
+    }
+
+    .show-me-more-link{
+        width: 100%;
+        text-decoration: none;
+
+        display: flex;
+        justify-content: center;
+        color: var(--dark-color);
+        transition: color 0.3s ease-in-out;
+        font-weight: 100;
+    }
+
+    .show-me-more-text{
+        font-size: 2em;
+        text-align: center;
     }
 
 

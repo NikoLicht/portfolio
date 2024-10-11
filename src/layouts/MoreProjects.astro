@@ -1,0 +1,46 @@
+---
+import MainLayout from "./MainLayout.astro";
+import GradientBox from "./GradientBox.astro";
+import ProjectCard from "./ProjectCard.astro";
+
+const moreProjects = await Astro.glob("../pages/more/*.md");
+
+console.log(moreProjects);
+
+---
+
+<MainLayout>
+    <GradientBox showNavigation={true}>
+        <div class="more-projects-container">
+                {
+                    moreProjects.sort((a, b) =>{
+                        return a.frontmatter.order - b.frontmatter.order;
+                    }).map((post) => <ProjectCard {post} />)
+                }
+        </div>
+    </GradientBox>
+</MainLayout>
+
+
+<style>
+
+.more-projects-container {
+    padding: 2em;
+    margin: 2em auto 4em auto;
+
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: center;
+    justify-content: center;
+
+
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+
+
+
+</style>
+

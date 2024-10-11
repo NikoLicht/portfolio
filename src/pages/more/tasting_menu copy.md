@@ -2,11 +2,13 @@
 layout: ../../layouts/ProjectPage.astro
 title: SpotRacers
 roles: ["3D Artist", "Techical Artist"]
+role: Magic person
 date: 2023 - now
 tech: ["Unity", "C#","Blender", "Python"]
 summary: low-poly mobile one-finger racing game, with image recognition of cars.
 shortText: This is a short, but veeeeery cool text about the game that i have made. Or been part of making
-cover: "../../images/test.avif"
+cover: "clutter_cover_gif"
+order: 10
 applinks: 
   - name: "Apple Appstore"
     link: "https://apps.apple.com/us/app/spotracers-car-racing-game/id1517765834"
@@ -18,6 +20,7 @@ mainMediaLink: "https://www.youtube.com/watch?v=pAdEDc6Jkug"
 mainMediaType: "youtube"
 
 media:
-  - text: "test image"
-    paths: ["../../images/test.avif"]
+  - title: "whuhu"
+    text: "test image"
+    paths: ["SimonWizard"]
 ---
