@@ -136,7 +136,7 @@ if (frontmatter.mainMediaType == "image"){
 
         display: grid;
         grid-template-columns: 1fr .2fr 1fr 1fr;
-        grid-template-rows: 2fr 1fr 1fr 3fr 1fr;
+        /* grid-template-rows: 2fr 1fr 1fr 3fr 1fr; */
         grid-template-areas: 
         " title title title title "
         " year year roles roles "
@@ -149,6 +149,7 @@ if (frontmatter.mainMediaType == "image"){
 
     .title{
         grid-area: title;
+        margin: 0;
     }
 
     h1{
