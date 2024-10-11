@@ -37,35 +37,24 @@ import GradientBox from "./GradientBox.astro"
 
     .section{
         padding: 1em;
-        margin: auto;
+        margin: 0 auto 0 auto;
         width: 80%;
         max-width: 1200px;
-    }
-
-    .gradient-top-down{
-        background-color: var(--light-color);
-        background: var(--light-color);
-        background: linear-gradient(24deg, var(--egg-color-saturated) 0%, var(--gradient-light) 80%); 
-    }
-    
-    .gradient-bottoms-up{
-        background-color: var(--light-color);
-        background: var(--light-color);
-        background: linear-gradient(24deg, var(--gradient-light) 0%, var(--egg-color-saturated) 80%); 
-    }
-
-    .content {
-        background-color: var(--dark-color);
-        width: 100%;
-        margin: auto;
-        font-family: 'Roboto Mono', monospace;
-        padding-top: 1em;
-        padding-bottom: 3em;
     }
 
     .section:nth-child(2){
         margin-top: 40px;
     }
+
+    .content {
+        background-color: var(--dark-color);
+        width: 100%;
+        margin: 0 auto 0 auto;
+        font-family: 'Roboto Mono', monospace;
+        padding-top: 1rem;
+        padding-bottom: 3em;
+    }
+
 
 
     @media only screen and (max-width: 600px) {
@@ -74,7 +63,7 @@ import GradientBox from "./GradientBox.astro"
         }
 
         .section{
-            padding: 1em;
+            padding: 0em;
             margin: auto;
             width: 90%;
         }
