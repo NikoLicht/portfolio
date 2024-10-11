@@ -3,7 +3,7 @@ layout: ../../layouts/ProjectPage.astro
 title: Used furniture restoration
 roles: ["Restoration man"]
 role: Restoration Expert
-date: 2023 - now
+date: Always
 tech: ["Makita", "Glue","Pipe Clamps"]
 summary: It's hard work, but fun to restore furniture.
 shortText: I like woodworking and love to put my (our) own touch on furniture
