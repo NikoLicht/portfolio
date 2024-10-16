@@ -17,6 +17,7 @@ if (frontmatter.mainMediaType == "image"){
 }
 
 
+const hasLinks = frontmatter.applinks != undefined && frontmatter.applinks.lenght > 0;
 ---
 
 <MainLayout>
@@ -49,11 +50,16 @@ if (frontmatter.mainMediaType == "image"){
                         <div class="info-field summary">
                             <p class="summary-text">{frontmatter.shortText}</p>
                         </div>
-                        <div class="info-field links">
-                            {
-                                frontmatter.applinks.map((link) => <a class="multiple-data" href={link.link}>{link.name}</a><VerticalLine class="hide-last"/>)
-                            }
-                        </div>
+                            {frontmatter.applinks && frontmatter.applinks.length > 0 ? (
+                            <div class="info-field links">
+                                {frontmatter.applinks.map((link) => (
+                                <>
+                                    <a class="multiple-data" href={link.link}>{link.name}</a>
+                                    <VerticalLine class="hide-last" />
+                                </>
+                                ))}
+                            </div>
+                            ) : null}
                     </div>
 
 
