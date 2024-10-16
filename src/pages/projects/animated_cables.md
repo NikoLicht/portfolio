@@ -7,7 +7,7 @@ date: 2024
 tech: ["Blender", "C#"]
 summary: I made a fun little project where I made some assets for some friends making a game. 
 shortText: A little fun project where my focus was to make very tangible items that all could be plugged into an outlet. it was important for me to make a system where there could only be a single cable coming in to each outlet. Further, the animation should be parametric. And so the cables are animated making a curve based on the normals of the item and the plug.
-cover: "clutter_cover_gif"
+cover: "bm_zoom"
 order: 50
 
 
