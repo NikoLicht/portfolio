@@ -10,7 +10,7 @@ shortText: This little script recursively runs through all photos in the current
 cover: "image_sorter_cover"
 order: 15
 applinks: 
-  - name: Image sorter
+  - name: github
     link: https://github.com/NikoLicht/ImageSorter
 
 mainMediaName: "Cute snake sorting through photos"
