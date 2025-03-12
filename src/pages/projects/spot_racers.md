@@ -8,7 +8,7 @@ tech: ["Unity", "C#","Blender", "Python"]
 summary: low-poly mobile one-finger racing game, with image recognition of cars.
 shortText: Working on SpotRacers I have been in charge of making assets. All the way from making the models to implementing them in the game, making shaders, and making editor tools for setting them up. As such I have had a broad Techincal artist role. I have primarily worked on Cars, Tracks, Accessories and Optimization, but many other things as well.
 cover: "track_offroad5_gif"
-order: 1
+order: 20
 applinks: 
   - name: "Apple Appstore"
     link: "https://apps.apple.com/us/app/spotracers-car-racing-game/id1517765834"
