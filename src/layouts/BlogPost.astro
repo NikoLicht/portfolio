@@ -1,0 +1,100 @@
+---
+import MainLayout from "./MainLayout.astro";
+import GradientBox from "./GradientBox.astro";
+const {frontmatter } = Astro.props;
+---
+
+<MainLayout>
+    <GradientBox showNavigation={true}>
+    <div class="blog-wrapper">
+        <header class="blog-header">
+        <h1>{frontmatter.title}</h1>
+        <div class="blog-meta">
+            <time datetime={frontmatter.createdAt}>from: {frontmatter.createdAt}</time>
+            {frontmatter.tags && (
+            <ul class="blog-tags">
+                {frontmatter.tags.map(tag => (
+                <li class="blog-tag">{tag}</li>
+                ))}
+            </ul>
+            )}
+        </div>
+        {frontmatter.shortText && (
+            <p class="blog-short-text">{frontmatter.shortText}</p>
+        )}
+        </header>
+        <article class="blog-article">
+            <slot />
+        </article>
+    </div>
+  </GradientBox>
+</MainLayout>
+
+<style>
+.blog-wrapper {
+    width: 60%;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    background-color: #eee;
+}
+
+p img {
+  width: 100%;
+}
+
+.blog-header {
+  margin-bottom: 2rem;
+}
+
+.blog-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.blog-tags {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-tag {
+  background: #ddd;
+  border-radius: 0.5em;
+  padding: 0.2em 0.7em;
+  font-size: 0.9em;
+}
+
+.blog-short-text {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.blog-article {
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+:global(.blog-article p img) {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+:global(.blog-article table){
+  width:100%;
+}
+
+@media (max-width: 600px) {
+  .blog-article {
+  }
+}
+</style>

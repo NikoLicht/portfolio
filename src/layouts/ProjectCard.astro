@@ -5,20 +5,15 @@ const role = post.frontmatter.role;
 const technologies = post.frontmatter.tech;
 
 console.log("looking for: " + cover);
-let coverImg : any;
-
-let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}').then(files => {
-    files.map((checkFile) => {
-        let match = checkFile.default;
-        //console.log("Checking match between " + cover + " and " + match);
-    });
-    return files.filter(file => file.default.includes(cover));
-}).then( matches => {
-    //console.log(matches.length + " is lenght of matching images");
-    coverImg = matches[0].default;
-    //console.log(coverImg);
-});
-
+const imageModules = import.meta.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}', { import: 'default', eager: true });
+const imageEntry = Object.entries(imageModules).find(([key]) => key.includes(cover));
+let coverImg = imageEntry ? (imageEntry[1].src as string) : "";
+if (!coverImg) {
+  console.log("No matching images found for " + cover);
+} else {
+  console.log("Found matching image: " + coverImg);
+  console.log(coverImg);
+}
 ---
 
 <a href={post.url} class="project">

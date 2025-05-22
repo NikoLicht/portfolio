@@ -2,21 +2,19 @@
 import Slider from './Slider';
 const {mediaSection} = Astro.props;
 let sources : Record<string, string> = {};
-let imagePaths : Array<string> = new Array();
+let imagePaths : Array<string> = [];
 
-if (mediaSection.paths != undefined){
-    console.log("checking images");
-    let images = await Astro.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}').then(files => {
-        files.map((checkFile) => {
-                for (let index = 0; index < mediaSection.paths.length; index++) {
-                    let matchName : string = mediaSection.paths[index];
-                    if(checkFile.default.includes(matchName)){
-                        sources[matchName] = checkFile.default;
-                        imagePaths.push(checkFile.default);
-                    }
-                }
-            });
-        });
+// Use Vite's import.meta.glob to eagerly import all images as URLs
+const imageModules = import.meta.glob('../images/projects/**/*.{png,jpeg,jpg,gif,webp}', { import: 'default', eager: true });
+
+if (mediaSection.paths != undefined) {
+    for (const matchName of mediaSection.paths) {
+        const imageEntry = Object.entries(imageModules).find(([key]) => key.includes(matchName));
+        if (imageEntry) {
+            sources[matchName] = imageEntry[1] as string;
+            imagePaths.push(imageEntry[1].src as string);
+        }
+    }
 }
 ---
 <div class="gallery-tile">
