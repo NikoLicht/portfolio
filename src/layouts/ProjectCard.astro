@@ -10,10 +10,7 @@ const imageEntry = Object.entries(imageModules).find(([key]) => key.includes(cov
 let coverImg = imageEntry ? (imageEntry[1].src as string) : "";
 if (!coverImg) {
   console.log("No matching images found for " + cover);
-} else {
-  console.log("Found matching image: " + coverImg);
-  console.log(coverImg);
-}
+} 
 ---
 
 <a href={post.url} class="project">
