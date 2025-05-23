@@ -25,6 +25,7 @@ Here is a list of the metal things that support my rituals.
 - Weights for lifting.
 - Hurricane lanterns.
 - Fountain pens.
+- [Citus squeezer](https://www.barworld.com/shop/beaumont-mexican-elbow-1792p.html?gQT=1)
 
 All of these metal objects support me in small rituals and routines in my everyday life. Some are only used a few times a year, some are used multiple times per week.
 
@@ -35,7 +36,7 @@ They can support me in creating a routine in a world that changes so rapidly.
 I think we all crave small rituals. For many people coffee brewing is more than just consumption. It is something more. Something where value is derived from not only the end-product but also the process. And I really think this extends to many other objects.
 
 ## Materials
-As an exercise, I made this little table for examining the materials i surround myself with. The idea is not to say that wood is best (but it is). But rather to just think about qualities I (generally) value in materials in relation to . 
+As an exercise, I made this little table for examining the materials i surround myself with. The idea is not to say that wood is best (but it is). But rather to just think about qualities I (generally) value in materials (in the context of rituals). 
 
 | **Material** | **Durable** | **Repairable** | **Recyclable** | **Eco-friendly** |
 |:------------:|:-----------:|:--------------:|:--------------:|:----------------:|
