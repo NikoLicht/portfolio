@@ -7,6 +7,8 @@ import GradientBox from "../layouts/GradientBox.astro";
 let allProjects = await Astro.glob("../pages/projects/*.md");
 const heroImg = (await import('../images/info/full_figure_extended.png')).default;
 const moreProjects = await import("../pages/info/more_projects.md");
+const extraProjects = await Astro.glob("../pages/more/*.md");
+const totalProjects = allProjects.length + extraProjects.length;
 ---
 <MainLayout title="Nikolaj Licht // Creative Dev">
     <div>
@@ -35,16 +37,14 @@ const moreProjects = await import("../pages/info/more_projects.md");
                         return a.frontmatter.order - b.frontmatter.order;
                     }).map((post) => <ProjectCard {post} />)
                 }
+                    <div class="show-me-more-container">
+                        <a class="show-me-more-link" href={moreProjects.url}>
+                            <p class="show-me-more-text">
+                                SEE ALL {totalProjects} PROJECTS
+                            </p>     
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </GradientBox>
-        <GradientBox showNavigation{false}>
-            <div class="show-me-more-container">
-                <a class="show-me-more-link" href={moreProjects.url}>
-                    <p class="show-me-more-text">
-                        SHOW ME MORE PROJECTS
-                    </p>     
-                </a>
             </div>
         </GradientBox>
     </div>
@@ -167,7 +167,7 @@ const moreProjects = await import("../pages/info/more_projects.md");
     .show-me-more-container{
         background-color: var(--egg-color);
         height: 100px;
-        margin: 2em;
+        min-width: 300px;
         transition: background-color 0.3s ease-in-out;
 
         display: flex;

@@ -25,5 +25,4 @@ mainMediaType: "image"
 media:
   - title: "Commands and objects"
     text: Making a foundation for this CLI based toy, I decided on utilizing a component-based architecture. This allowed me to easily expand on the different objects and reuse parts of their behavior. I've also put a lot of thoughts into what actions and utils a player would need. I've made use of the library Rich, to format the output in a nicer way. 
-    paths: [ "barista_main"]
 ---

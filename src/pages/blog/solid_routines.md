@@ -12,7 +12,7 @@ Yet most often, this is almost a feeling we have when we pick up something. Alon
 
 When I pick up a tool (broad definition) _it is whispering to me, reassuring me, that it can be a partner in rituals and routines_. The fact that it is sturdy and will last, is confirming how it will cement its role in my life, and how I can count on it for years on end.
 
-![An analog photo I took of my razor. Pentax K2 - Some macro lens and very expired Gold 200](../../images/blog/SafetyRazor.jpg)
+![An analog photo I took of my razor. Pentax K2, Macro lens, Expired Gold 200](../../images/blog/SafetyRazor.jpg)
 
 Here is a list of the metal things that support my rituals.
 - Double edged safety razor.
@@ -35,7 +35,7 @@ They can support me in creating a routine in a world that changes so rapidly.
 I think we all crave small rituals. For many people coffee brewing is more than just consumption. It is something more. Something where value is derived from not only the end-product but also the process. And I really think this extends to many other objects.
 
 ## Materials
-As an exercise, I made this little table for examining the materials i surround myself with. The idea is not to say that wood is best (but it is). But rather to just think about qualities I (generally) value in materials. 
+As an exercise, I made this little table for examining the materials i surround myself with. The idea is not to say that wood is best (but it is). But rather to just think about qualities I (generally) value in materials in relation to . 
 
 | **Material** | **Durable** | **Repairable** | **Recyclable** | **Eco-friendly** |
 |:------------:|:-----------:|:--------------:|:--------------:|:----------------:|

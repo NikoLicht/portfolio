@@ -4,8 +4,8 @@ import GradientBox from "./GradientBox.astro";
 import ProjectCard from "./ProjectCard.astro";
 
 const moreProjects = await Astro.glob("../pages/more/*.md");
-
-console.log(moreProjects);
+const baseProjects = await Astro.glob("../pages/projects/*.md");
+const allProjects = [...moreProjects, ...baseProjects];
 
 ---
 
@@ -13,7 +13,7 @@ console.log(moreProjects);
     <GradientBox showNavigation={true}>
         <div class="more-projects-container">
                 {
-                    moreProjects.sort((a, b) =>{
+                    allProjects.sort((a, b) =>{
                         return a.frontmatter.order - b.frontmatter.order;
                     }).map((post) => <ProjectCard {post} />)
                 }

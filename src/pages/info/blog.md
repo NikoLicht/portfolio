@@ -2,6 +2,6 @@
 layout: ../../layouts/BlogPosts.astro
 title: Blog
 summary: Ramblings
-order: 1
+order: 5
 funnyTitle: "Ramblings"
 ---

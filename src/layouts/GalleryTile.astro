@@ -17,7 +17,7 @@ if (mediaSection.paths != undefined) {
     }
 }
 ---
-<div class="gallery-tile">
+<div class={"gallery-tile" + (mediaSection.paths == undefined ? " only-text" : "")}>
     <div class="image-section">
         <Slider images={imagePaths} ></Slider>
     </div>
@@ -43,6 +43,17 @@ if (mediaSection.paths != undefined) {
         grid-template-areas:
             "image info";
         gap: 1em;
+    }
+
+    .gallery-tile.only-text {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "info";
+        gap: 1em;
+        padding: 0.5em;
+        margin: 3em;
+        margin-bottom: 3em;
     }
 
     .text-section {

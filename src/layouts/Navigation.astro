@@ -1,5 +1,6 @@
 ---
-const infoPages = await Astro.glob("../pages/info/*.md");
+const infoPages = (await Astro.glob("../pages/info/*.md"))
+  .sort((a, b) => (a.frontmatter.order ?? 0) - (b.frontmatter.order ?? 0));
 const homePage = await import("../pages/index.astro");
 ---
 

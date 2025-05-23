@@ -3,3 +3,10 @@ const {class: className} = Astro.props;
 ---
 
 <p class={className}>|</p>
+
+
+<style>
+    .hide-last:last-child{
+        display: none;
+    }
+</style>
