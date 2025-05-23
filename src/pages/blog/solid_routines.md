@@ -13,6 +13,7 @@ Yet most often, this is almost a feeling we have when we pick up something. Alon
 When I pick up a tool (broad definition) _it is whispering to me, reassuring me, that it can be a partner in rituals and routines_. The fact that it is sturdy and will last, is confirming how it will cement its role in my life, and how I can count on it for years on end.
 
 ![An analog photo I took of my razor. Pentax K2, Macro lens, Expired Gold 200](../../images/blog/SafetyRazor.jpg)
+*Razor sharp image. Pentax K2, Macro lens, Expired Gold 200*
 
 Here is a list of the metal things that support my rituals.
 - Double edged safety razor.
