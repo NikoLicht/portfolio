@@ -33,26 +33,25 @@ But in reality the real cost of analog photography is the film, the development 
 | Scanning 120 (standard resolution, per roll) | 75 kr.    |
 
 
-### Cost Breakdown 35
-
+### Cost Breakdown 135
 | step                                     | Math          |
 |------------------------------------------|---------------|
 | Film per roll                            | 270 / 3 = 90  |
 | Total cost per roll                      | 90 + 50 + 75 = 215 kr. |
 | Cost per photo                           | 215 / 35 ≈ 6.14 kr. |
 
-**≈ 215 kr. per roll**  
-**≈ 6.14 kr. per photo**
 
 ### Cost Breakdown 120
-
 | Step                                     | Math          |
 |------------------------------------------|---------------|
 | Total cost per roll                      | 120 + 60 + 75 = 255 kr. |
 | Cost per photo                           | 255 / 12 ≈ 21.25 kr. |
 
-**≈ 255 kr. per roll**  
-**≈ 21.25 kr. per photo**
+**≈ 215 kr. per 135 roll**  
+**≈ 6.14 kr. per 135 photo**
+
+**≈ 255 kr. per 120 roll**  
+**≈ 21.25 kr. per 120 photo**
 
 
 ## My point being
