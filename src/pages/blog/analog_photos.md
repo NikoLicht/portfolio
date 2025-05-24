@@ -10,12 +10,12 @@ I originally got into analog photography because I fell for mechanical feeling w
 Since then (around 2022), I've been though quite a few rolls of film. I've even added a few cameras to my collection. As of writing, I have expanded my collection to also include a few different cameras.
 
 ![My Pentax K2](../../images/blog/pentax_k2.png)
-*My Pentax K2*
+*My Pentax K2 taking a rest in a danish 70's summerhouse.*
 
 | **Camera**      | **Film** | **State**      | **Comment**    | **Bought for** |
 |:---------------:|:--------:|:--------------:|:--------------:|:--------------:|
-| **Pentax K2**   | 35mm     | Mostly working | Primary Camera | 900 Dkk        |
-| **Nikon Fm**    | 35mm     | Working        | Backup Camera  | 615 Dkk        |
+| **Pentax K2**   | 135     | Mostly working | Primary Camera | 900 Dkk        |
+| **Nikon Fm**    | 135     | Working        | Backup Camera  | 615 Dkk        |
 | **Ikoflex IIa** | 120      | Working        | So much fun    | 500 Dkk        |
 | **Yashica-Mat** | 120      | Not working    | Sad            | 450 Dkk        |
 
@@ -24,7 +24,7 @@ But in reality the real cost of analog photography is the film, the development 
 ### Prices
 
 | Item                                     | Price     |
-|------------------------------------------|-----------|
+|------------------------------------------|----------:|
 | Kodak Gold 200 135 (3-pack, 35 exposures)    | 270 kr.   |
 | Development 135 (per roll)                   | 50 kr.    |
 | Scanning 135 (standard resolution, per roll) | 75 kr.    |
@@ -34,24 +34,19 @@ But in reality the real cost of analog photography is the film, the development 
 
 
 ### Cost Breakdown 135
-| step                                     | Math          |
-|------------------------------------------|---------------|
-| Film per roll                            | 270 / 3 = 90  |
-| Total cost per roll                      | 90 + 50 + 75 = 215 kr. |
-| Cost per photo                           | 215 / 35 ≈ 6.14 kr. |
+| step                                     | Math          | Wallet Ouch |
+|------------------------------------------|:-------------:|------------:|
+| Price per roll in pack                   |      270 / 3  | 90 kr.      |
+| Total cost per roll                      | 90 + 50 + 75  | 215 kr.     |
+| Cost per photo                           | 215 / 35      | 6.14 kr.    |
 
 
 ### Cost Breakdown 120
-| Step                                     | Math          |
-|------------------------------------------|---------------|
-| Total cost per roll                      | 120 + 60 + 75 = 255 kr. |
-| Cost per photo                           | 255 / 12 ≈ 21.25 kr. |
+| Step                                     | Math          | Wallet Ouch      |
+|------------------------------------------|:-------------:|---------: |
+| Total cost per roll                      | 120 + 60 + 75 | 255 kr.   |
+| Cost per photo                           | 255 / 12      | 21.25 kr. |
 
-**≈ 215 kr. per 135 roll**  
-**≈ 6.14 kr. per 135 photo**
-
-**≈ 255 kr. per 120 roll**  
-**≈ 21.25 kr. per 120 photo**
 
 
 ## My point being
@@ -60,6 +55,17 @@ I am very much a photographer for myself. I serve myself. I take photos for my o
 
 
 You might take photos of nature, architecture or more abstract subjects, I think that the idea still stands. You should live the moments that your film is worth. <mark>Your time is worth _slightly_ more than celluloid film anyway</mark>.
+
+## The moments.
+I nominate the below moments as my best celluloid entrapped moments so far. The nomination is loosely based on which photos I get the happiest from looking at.
+1. Proposal to my wife (used the build in pseudo-reliable timer).
+2. Birthday hangout in the sun with a campfire.
+3. Hangout with friends at big table or activities with friends.
+4. More family stuff.
+5. Really any photo of my stunning wife.
+6. The photos my wife take of me. She is often a better photographer than i am.
+
+Based on this not-very-scientific list, it is clear that I should out more with friends and family, or propose to my wife again, even if I need to take a few pictures. 
 
 
 
