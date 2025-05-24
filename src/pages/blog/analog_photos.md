@@ -8,6 +8,7 @@ shortText: How analog photography impacts my wallet and life.
 
 I originally got into analog photography because I fell for mechanical feeling when trying out my friends Pentax K1000. The shutter and the winding mechanisms were particularly exciting. Soon after I got my hands on a Pentax K2 and some expired film that my parents had forgotten in a drawer.
 Since then (around 2022), I've been though quite a few rolls of film. I've even added a few cameras to my collection. As of writing, I have expanded my collection to also include a few different cameras.
+
 ![My Pentax K2](../../images/blog/pentax_k2.png)
 *My Pentax K2*
 
@@ -18,7 +19,7 @@ Since then (around 2022), I've been though quite a few rolls of film. I've even 
 | **Ikoflex IIa** | 120      | Working        | So much fun    | 500 Dkk        |
 | **Yashica-Mat** | 120      | Not working    | Sad            | 450 Dkk        |
 
-But in reality the real cost of analog photography is the film, the development and the scanning. I can only recommend the store ![Shutterbug](https://shutterbugcph.dk/) if you need to develop in copenhagen. They are friendly and helpful.
+But in reality the real cost of analog photography is the film, the development and the scanning. I can only recommend the store [Shutterbug](https://shutterbugcph.dk/), if you need to develop in copenhagen. They are friendly and helpful.
 
 ### Prices
 
@@ -31,11 +32,10 @@ But in reality the real cost of analog photography is the film, the development 
 | Development 120 (per roll)                   | 60 kr.    |
 | Scanning 120 (standard resolution, per roll) | 75 kr.    |
 
----
 
 ### Cost Breakdown 35
 
-| Math                         |          |
+| step                                     | Math          |
 |------------------------------------------|---------------|
 | Film per roll                            | 270 / 3 = 90  |
 | Total cost per roll                      | 90 + 50 + 75 = 215 kr. |
@@ -46,7 +46,7 @@ But in reality the real cost of analog photography is the film, the development 
 
 ### Cost Breakdown 120
 
-| Math                         |          |
+| Step                                     | Math          |
 |------------------------------------------|---------------|
 | Total cost per roll                      | 120 + 60 + 75 = 255 kr. |
 | Cost per photo                           | 255 / 12 ≈ 21.25 kr. |

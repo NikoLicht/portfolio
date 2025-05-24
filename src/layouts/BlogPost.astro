@@ -93,8 +93,26 @@ p img {
   width:100%;
 }
 
+:global(.blog-article td){
+  background-color: #f7f7f7; /* subtle white-grey */
+}
+
+:global(thead){
+  background-color: #afc2b5
+}
+
+
 @media (max-width: 600px) {
-  .blog-article {
+  .blog-wrapper {
+    width: 90%;
+    padding: 1rem;
+    margin: 1em auto;
+  }
+
+  :global(.blog-article table){
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
 </style>
