@@ -50,14 +50,15 @@ But in reality the real cost of analog photography is the film, the development 
 
 
 ## My point being
-To me at least, the fact that it is expensive to make a photo, reminds me that <mark>I should make sure to experience moments in life that are worth spending that price to capture forever</mark>. Worthy of a photo. Though, I don't think every moment must be photographed - it's also important to simply live in the moment. 
-I am very much a photographer for myself. I serve myself. I take photos for my own future reminiscing of good times with friends and family. My photos are rarely masterpieces, but imperfectly captures a real moments. If they are super shitty, it is because I had a great time. If you are curious check some of them out [here](https://photos.google.com/share/AF1QipNmj_b66m4hsL4wxDlr063fvHkjUyZWybj5Xevx31tC7Y-cydDFLzlJwi9_V-VZjw?key=NFk3TERqUVlyY3hIa0FNaHlTcEJycjhYM2MzQVln).
+To me at least, the fact that it is expensive to make a photo, reminds me that <mark>I should surround myself with moments that are worth capturing forever</mark>, also taking the film price into account. Worthy of a photo. Though, I do recommend trying to just live in the moment. 
+I am very much a photographer for myself. I serve myself. I take photos for my own future reminiscing of good times with friends and family. My photos are rarely masterpieces, but often imperfectly captures a real moment. If they are super shitty, it is because I had a great time. If you are curious check some of my amateur photos out [here](https://nikolicht.github.io/portfolio/info/photogallery/).
 
 
 You might take photos of nature, architecture or more abstract subjects, I think that the idea still stands. You should live the moments that your film is worth. <mark>Your time is worth _slightly_ more than celluloid film anyway</mark>.
 
 ## The moments.
 I nominate the below moments as my best celluloid entrapped moments so far. The nomination is loosely based on which photos I get the happiest from looking at.
+
 - Proposal to my wife (used the build in pseudo-reliable timer).
 - Birthday hangout in the sun with a campfire.
 - Hangout with friends at big table or activities with friends.
@@ -65,7 +66,7 @@ I nominate the below moments as my best celluloid entrapped moments so far. The 
 - Really any photo of my _stunning_ wife.
 - The photos my wife take of me. She is often a better photographer than i am.
 
-Based on this not-very-scientific list, it is clear that I should out more with friends and family, or propose to my wife again, even if I need to take a few pictures. 
+Based on this not-very-scientific list, it is clear that I should hang out more with friends and family, (or propose again haha), even if I need to take a few pictures. 
 
 
 
