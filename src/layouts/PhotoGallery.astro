@@ -1,0 +1,162 @@
+---
+import MainLayout from "./MainLayout.astro";
+import GradientBox from "./GradientBox.astro";
+import {marked} from "marked";
+
+const { images = [], about = "" } = Astro.props.frontmatter;
+images.sort((a, b) => {
+  const dateA = new Date(a.date || "1970-01-01");
+  const dateB = new Date(b.date || "1970-01-01");
+  return dateB - dateA; // Sort by date descending
+});
+
+const aboutHtml = marked.parse(about);
+---
+
+<MainLayout>
+  <GradientBox showNavigation={true}>
+    <div class="gallery-about" set:html={aboutHtml}></div>
+    <div class="gallery-masonry-wrapper">
+      <div class="gallery-masonry">
+        {images.map((img, i) => (
+          <div class="gallery-masonry-item">
+            <img src={img.link} alt={img.title ?? `Gallery photo ${i+1}`} loading="lazy" />
+            <div class="gallery-caption">
+              <div class="caption-main">
+                <div>
+                  <strong>{img.title}</strong><br />
+                  <small>
+                    {img.date && <>{img.date},</>}
+                    {img.gear && <>{img.gear},</>}
+                    {img.film && <>{img.film}</>}
+                  </small>
+                </div>
+                <a
+                  href={img.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="gallery-open-btn"
+                  title="Open image in new tab"
+                  aria-label="Open image in new tab"
+                >
+                  <!-- Open in new tab SVG icon -->
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M7 13L13 7M13 7H8M13 7V12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="3" y="3" width="14" height="14" rx="2" stroke="#333" stroke-width="2"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </GradientBox>
+</MainLayout>
+
+<style>
+
+.gallery-about {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  line-height: 1.3;
+  color: #333;
+}
+
+.gallery-masonry-wrapper {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.gallery-masonry {
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+.gallery-masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: #fff;
+  padding-bottom: 0.5em;
+}
+
+.gallery-masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-caption {
+  padding: 0.5em 0.5em 0 0.5em;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.caption-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.gallery-open-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2em;
+  height: 2.2em;
+  min-width: 2.2em;
+  min-height: 2.2em;
+  max-width: 2.2em;
+  max-height: 2.2em;
+  background: #eee;
+  color: #333;
+  border-radius: 0.5em;
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-left: 0.5em;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  flex-shrink: 0;
+}
+
+.gallery-open-btn:hover {
+  background: #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.gallery-open-btn svg {
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  min-width: 1.2em;
+  min-height: 1.2em;
+  max-width: 1.2em;
+  max-height: 1.2em;
+}
+
+/* Responsive columns */
+@media (max-width: 1200px) {
+  .gallery-masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery-masonry {
+    column-count: 1;
+  }
+  .gallery-masonry-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+</style>

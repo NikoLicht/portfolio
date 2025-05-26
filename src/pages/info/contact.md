@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Contact.astro
-title: contact me
+title: contact
 summary: Im friendly don't worry
 order: 1
 showInNav: true

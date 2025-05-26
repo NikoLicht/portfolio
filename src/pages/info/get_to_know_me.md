@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/GetToKnowMe.astro
-title: Get to know me
+title: About
 summary: Im pretty cool
 name_first: Nikolaj
 name_last: Licht

@@ -14,6 +14,7 @@
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
     "astro": "^5.7.13",
+    "marked": "^15.0.12",
     "prismjs": "^1.29.0",
     "react": "^19.0.0-beta",
     "react-dom": "^19.0.0-beta",
