@@ -8,7 +8,7 @@ import GradientBox from "./GradientBox.astro";
 
 <MainLayout>
     <div>
-        <GradientBox showNavigation={true}>
+        <GradientBox showNavigation={true} showCopyRight={true}>
             {
                     frontmatter.overview.map((mediaSection : any) => <GalleryTile {mediaSection}></GalleryTile>)
             }

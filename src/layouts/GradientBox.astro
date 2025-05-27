@@ -1,11 +1,14 @@
 ---
 import Navigation from "./Navigation.astro";
+import CopyRight from "./CopyRight.astro";
 const {showNavigation}  = Astro.props;
+const {showCopyRight} = Astro.props;
 ---
 
 <div class="section gradient-top-down">
     {showNavigation && <Navigation class="navigation"></Navigation>}
     <slot />
+    {showCopyRight && <CopyRight class="copyright"></CopyRight>}
 </div>
 
 

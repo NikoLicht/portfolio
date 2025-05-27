@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 title: Expensive photos and priceless moments.
 tags: ["Reflections"]
-createdAt: 23/05/2025
+createdAt: 25/05/2025
 shortText: How analog photography impacts my wallet and life.
 ---
 

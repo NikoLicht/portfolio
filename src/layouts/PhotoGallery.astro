@@ -3,18 +3,88 @@ import MainLayout from "./MainLayout.astro";
 import GradientBox from "./GradientBox.astro";
 import {marked} from "marked";
 
-const { images = [], about = "" } = Astro.props.frontmatter;
+interface GalleryImage {
+  title: string;
+  link: string;
+  date?: string;
+  gear?: string;
+  film?: string;
+}
+
+const { images = [], about = "" } = Astro.props.frontmatter as {images: GalleryImage[], about: string};
 images.sort((a, b) => {
-  const dateA = new Date(a.date || "1970-01-01");
-  const dateB = new Date(b.date || "1970-01-01");
-  return dateB - dateA; // Sort by date descending
+  const dateA = parseDate(a.date);
+  const dateB = parseDate(b.date);
+  return dateB.getTime() - dateA.getTime(); // Descending
 });
 
 const aboutHtml = marked.parse(about);
+
+function formatMonthYear(dateInput: string | number | undefined): string {
+  if (!dateInput) return "";
+  // Accepts "YYYY", "MM-YYYY", or "YYYY-MM" or Date
+  let dateStr = String(dateInput).trim();
+  // If only year, return as-is
+  if (/^\d{4}$/.test(dateStr)) return dateStr;
+  // If MM-YYYY or YYYY-MM
+  let parts = dateStr.includes('-') ? dateStr.split('-') : [];
+  let month: string | undefined, year: string | undefined;
+  if (parts.length === 2) {
+    if (parts[0].length === 4) { // YYYY-MM
+      year = parts[0];
+      month = parts[1];
+    } else { // MM-YYYY
+      month = parts[0];
+      year = parts[1];
+    }
+    // Pad month if needed
+    if (month && month.length === 1) month = '0' + month;
+    // Convert month number to name
+    if (month) {
+      const monthNum = parseInt(month, 10);
+      if (monthNum >= 1 && monthNum <= 12) {
+        const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        return `${monthNames[monthNum - 1]}-${year}`;
+      }
+    }
+    return `${month}-${year}`;
+  }
+  // Fallback: try to parse as Date
+  const d = new Date(dateStr);
+  if (!isNaN(d.getTime())) {
+    return `${d.toLocaleString('default', { month: 'short' })}-${d.getFullYear()}`;
+  }
+  return dateStr;
+}
+
+function parseDate(dateInput: string | number | undefined): Date {
+  if (!dateInput) return new Date("1970-01-01");
+  let dateStr = String(dateInput).trim();
+  // YYYY
+  if (/^\d{4}$/.test(dateStr)) return new Date(`${dateStr}-01-01`);
+  // MM-YYYY or YYYY-MM
+  let parts = dateStr.split('-');
+  if (parts.length === 2) {
+    let year, month;
+    if (parts[0].length === 4) { // YYYY-MM
+      year = parts[0];
+      month = parts[1];
+    } else { // MM-YYYY
+      month = parts[0];
+      year = parts[1];
+    }
+    if (month.length === 1) month = '0' + month;
+    return new Date(`${year}-${month}-01`);
+  }
+  // Fallback
+  const d = new Date(dateStr);
+  if (!isNaN(d.getTime())) return d;
+  return new Date("1970-01-01");
+}
 ---
 
 <MainLayout>
-  <GradientBox showNavigation={true}>
+  <GradientBox showNavigation={true} showCopyRight={true}>
     <div class="gallery-about" set:html={aboutHtml}></div>
     <div class="gallery-masonry-wrapper">
       <div class="gallery-masonry">
@@ -26,7 +96,7 @@ const aboutHtml = marked.parse(about);
                 <div>
                   <strong>{img.title}</strong><br />
                   <small>
-                    {img.date && <>{img.date},</>}
+                    {img.date && <>{formatMonthYear(img.date)},</>}
                     {img.gear && <>{img.gear},</>}
                     {img.film && <>{img.film}</>}
                   </small>
