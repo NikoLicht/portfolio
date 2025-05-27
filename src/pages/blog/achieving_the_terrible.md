@@ -10,7 +10,7 @@ I am a creative person. I have an inner need to create, build and play. I have a
 
 1. I am very curious about new things, almost to a fault. 
 2. I never expect perfect execution.
-3. Treat everyone else as experts
+3. I think of everyone as an expert in their own right.
 
 
 ### Being curious
