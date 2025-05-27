@@ -18,12 +18,17 @@ images:
     gear: Pentax K2, 130mm
     film: Kodak gold 200
     date: 09-2024
+  - title: Sunny snow hill
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1748095127/000068420032.png_compressed_ny5nvi.jpg"
+    gear: Pentax K2, 28mm
+    film: Kodak gold 200
+    date: 01-2025
   - title: Iglesia de Nuestra Señora de la Natividad, Teotitlan
     link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1748095125/000048550019.jpg_compressed_r6tuav.jpg"
     gear: Pentax K2
     film: Kodak gold 200
     date: 01-2024
-  - title: Sipping wine in Italy
+  - title: Felt cute, might delete later
     link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1748095129/000078550022.jpg_compressed_mnqexk.jpg"
     gear: Pentax k2
     film: Kodak gold 200
@@ -60,12 +65,12 @@ images:
     date: 09-2024
   - title: Very mexico
     link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1748331875/000048550009.jpg_compressed_uwdeq8.jpg"
-    gear: Pentax k2
+    gear: Pentax k2, 50mm
     film: Kodak gold 200
     date: 01-2024
   - title: Windows volcano background
     link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1748095130/000004960007.jpg_compressed_qrrezu.jpg"
-    gear: Pentax k2
+    gear: Pentax k2, 50mm
     film: Kodak gold 200
     date: 07-2023
   - title: Alpine lake rowing

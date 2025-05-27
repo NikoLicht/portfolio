@@ -59,7 +59,7 @@ You might take photos of nature, architecture or more abstract subjects, I think
 ## The moments.
 I nominate the below moments as my best celluloid entrapped moments so far. The nomination is loosely based on which photos I get the happiest from looking at.
 
-- Proposal to my wife (used the build in pseudo-reliable timer).
+- Proposal to my wife (used the built-in pseudo-reliable timer).
 - Birthday hangout in the sun with a campfire.
 - Hangout with friends at big table or activities with friends.
 - More family stuff.

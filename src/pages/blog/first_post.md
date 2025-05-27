@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 title: Bingo square achieved.
 tags: ["Meta"]
-createdAt: 21/05/2025
+createdAt: 20/05/2025
 shortText: "Obligatory first post about the blog."
 ---
 
