@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BlogPost.astro
-title: A wild blog appeared
+title: Bingo square achieved.
 tags: ["Meta"]
 createdAt: 21/05/2025
 shortText: "Obligatory first post about the blog."
