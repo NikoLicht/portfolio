@@ -9,7 +9,7 @@ export async function GET() {
 
   const posts = filteredPosts.map(([path, post]) => {
     const slug = path.replace('./blog/', '').replace('.md', '');
-    const { title, shortText, createdAt } = post.frontmatter;
+    const { title, shortText, createdAt, cover} = post.frontmatter;
 
     const [day, month, year] = createdAt.split('/');
     const pubDate = new Date(`${year}-${month}-${day}`);
@@ -35,11 +35,14 @@ export async function GET() {
     title: 'Nikolaj RSS Feed',
     description: 'Keep up with Nikolaj',
     site: 'https://nikolicht.github.io/portfolio/',
-    items: posts.map((post) => ({
-      title: post.data.title,
-      pubDate: post.data.pubDate,
-      description: post.data.description,
-      link: `/portfolio/blog/${post.slug}/`,
-    })),
+items: posts.map((post) => ({
+  title: post.data.title,
+  pubDate: post.data.pubDate,
+  description: `<img src=${coverImage} alt="${post.data.title}" /><p>${post.data.description}</p>`,
+  link: `/portfolio/blog/${post.slug}/`,
+  customData: `
+    <media:content url="${coverImage}" medium="image" />
+  `,
+})),
   });
 }
