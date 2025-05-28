@@ -25,6 +25,7 @@ export async function GET() {
         title,
         description: shortText,
         pubDate,
+        cover: cover,
       },
     };
   });
@@ -35,13 +36,16 @@ export async function GET() {
     title: 'Nikolaj RSS Feed',
     description: 'Keep up with Nikolaj',
     site: 'https://nikolicht.github.io/portfolio/',
+    xmlns:{
+      media: 'http://search.yahoo.com/mrss/',
+    },
 items: posts.map((post) => ({
   title: post.data.title,
   pubDate: post.data.pubDate,
-  description: `<img src=${coverImage} alt="${post.data.title}" /><p>${post.data.description}</p>`,
+  description: `<img src=${post.data.cover} alt="${post.data.title}" /><p>${post.data.description}</p>`,
   link: `/portfolio/blog/${post.slug}/`,
   customData: `
-    <media:content url="${coverImage}" medium="image" />
+    <media:content url="${post.data.cover}" medium="image" />
   `,
 })),
   });
