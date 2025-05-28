@@ -5,33 +5,36 @@ export async function GET() {
 
   const postEntries = Object.entries(allPostFiles);
 
-  // Filter only posts that have a createdAt
   const filteredPosts = postEntries.filter(([_, post]) => post?.frontmatter?.createdAt);
 
   const posts = filteredPosts.map(([path, post]) => {
     const slug = path.replace('./blog/', '').replace('.md', '');
+    const { title, shortText, createdAt } = post.frontmatter;
 
-    // Convert "27/05/2025" to proper Date string for RSS
-    const [day, month, year] = post.frontmatter.createdAt.split('/');
+    const [day, month, year] = createdAt.split('/');
     const pubDate = new Date(`${year}-${month}-${day}`);
+
+    // Log anything suspicious
+    if (!title || !shortText || !createdAt) {
+      console.warn('Invalid post frontmatter:', path, post.frontmatter);
+    }
 
     return {
       slug,
       data: {
-        title: post.frontmatter.title,
+        title,
+        description: shortText,
         pubDate,
-        description: post.frontmatter.shortText,
       },
     };
   });
 
-  // Sort by pubDate (newest first)
   posts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 
   return rss({
     title: 'Nikolaj RSS Feed',
     description: 'Keep up with Nikolaj',
-    site: 'https://nikolicht.github.io/portfolio/info/blog/',
+    site: 'https://nikolicht.github.io/portfolio/',
     items: posts.map((post) => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
