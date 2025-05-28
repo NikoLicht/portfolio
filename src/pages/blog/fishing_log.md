@@ -1,9 +1,10 @@
 ---
 layout: ../../layouts/BlogPost.astro
 title: Fishing Log
-tags: ["Activity"]
+tags: ["Activity", "Log"]
 createdAt: 27/05/2025
 shortText: "Follow along in my fishing adventures."
+cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748349006/IMG20250526195259_piafe0.png
 ---
 
 So I recently started fishing a little with my friends, because we are yearning for the ocean - or we are all just in our thirties. This is a log of that. We don't know a great deal about fishing, and only have used or cheap gear. 
@@ -26,4 +27,10 @@ So I recently started fishing a little with my friends, because we are yearning 
    - But my understanding is that it can be hard to be social while casting, as you need a bigger distance between fishers. It also seems very technical, but that is what reels me in. heh.
 4. Fishing from a boat
 5. Grilling a fish.
+
+### Basic equipment that would be kinda nice to have
+1. Sea approved sunglasses with UV400 protection and CE approval.
+2. Some wool fingerless gloves. (Maybe knit them myself?).
+3. A net.
+4. A knife we agree is only for fish (because of smells).
 

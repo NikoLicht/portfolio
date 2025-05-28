@@ -4,6 +4,7 @@ title: Achieving the terrible.
 tags: ["Reflections"]
 createdAt: 27/05/2025
 shortText: My process on creating terrible things - and fish math.
+cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748454841/IMG_20210811_090636634_geef45.jpg
 ---
 
 I am a creative person. I have an inner need to create, build and play. I have a tonne of projects, some more involved than others. _But how do you do it Nikolaj_ - you might ask. The answer is that:
@@ -19,6 +20,9 @@ Being curious can be hard to force for all topics. Im not interested in everythi
 ### On never expecting perfection
 This one is like 90% of the work. When I set out to do something, eg. create music, <mark>the goal is to create something, not to create something perfect</mark>. Particularly with music, I often enforce a time limit of 1-2 hours and then I tell myself that I have to publish by then. And sure enough, there is *a lot* of terrible music on my [SoundCloud](https://soundcloud.com/rustfri). It is very rough, and not super catchy, *but* it is out there, and I made it. If you give it a listen, please know that <mark>I am not delusional</mark>. I know that it is pretty bad. I am just not ashamed about it.
 It is very important for me that my projects don't just lie dormant, on my windowsill or in my desktop folder. I really think that enforcing some kind of constraints can be a great way to ensure finishing.
+
+![A little guitar-pedal setup for creating terrible music.](https://res.cloudinary.com/dlb3lkuge/image/upload/v1748454841/IMG_20210811_090636634_geef45.jpg)
+*A little guitar-pedal setup for creating terrible music.*
  
 You can always get better at getting good results. Speaking of getting better at getting good results - I often think about a paragraph in _The lean startup_[^2], where Eric explains how it can be beneficial to try the whole process out, before targeting efficiency. I recall that it is regarding the somewhat famous story about how Toyota became a success. I am aware that efficiency - is not equal to _good results_ but perhaps you can achieve them more efficiently, with technique, experience, knowledge and mindset? I don't know, just wanted to mention it.
 I stumbled into this [reddit post](https://www.reddit.com/r/productivity/comments/msxazr/the_real_meaning_of_dont_let_the_perfect_be_the/)[^3], which also has some truly great links and quotes. Check it out, if you are... _curious_.
