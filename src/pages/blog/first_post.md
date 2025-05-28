@@ -14,3 +14,14 @@ Well, it will probably be semi-incoherent ramblings about things I have been thi
 
 #### Is it for you?
 Maybe not. It is mostly for me. I think the exercise of clarifying thoughs to such an extend that other people can read them, is great, as it forces one to really think about what is important to get across. But honestly that will be too much to live up to, and knowing myself, I strive more towards execution rather than perfection.
+
+### The bingo board
+
+|                         |                    |                   |                       |                      |
+|:-----------------------:|:------------------:|:-----------------:|:---------------------:|:--------------------:|
+| Wedding album           | Build furniture    | Own a car         | Read three books      | Fly fishing          |
+| Bake sourdough bread    | Eat a biegel       | Get a tattoo      | Own a nature property | Spot a moose         |
+| Knit somthing           | See new mountains  | Record a new song | Buy stocks            | Learn a new language |
+| Recreate thesis project | Shoot a 6x6 camera | Create a blog     | Buy a house           |                      |
+| See a sunset            | Get a job          |                   |                       |                      |
+
