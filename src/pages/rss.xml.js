@@ -39,7 +39,7 @@ export async function GET() {
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
-      link: `/info/blog/${post.slug}/`,
+      link: `/blog/${post.slug}/`,
     })),
   });
 }
