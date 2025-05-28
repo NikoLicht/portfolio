@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BlogPost.astro
-title: Bingo square achieved.
+title: Bingo square checked off.
 tags: ["Meta"]
 createdAt: 20/05/2025
 shortText: "Obligatory first post about the blog. And bingo."
