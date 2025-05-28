@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogPost.astro
-title: Casual self hosted wine tasting
+title: Casual self hosted wine tasting.
 tags: ["Activities"]
 createdAt: 28/05/2025
-shortText: "Come for the pdf download, stay for the hosting a relaxed wine tasting for friends"
+shortText: "Come for the pdf download, stay for the 'hosting a relaxed wine tasting for friends'."
 ---
 
 I recently hosted a little casual wine tasting for friends. The theme was 'Friendly Chaos'. Conceptually that meant that everyone was to bring one bottle of wine, no rules. It could be wine they liked drinking, wine they hated, or wine they just wanted to taste. For me it was mostly about trying to <mark>host a wine tasting, without making it super formal</mark>.
