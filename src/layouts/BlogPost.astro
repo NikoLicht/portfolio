@@ -4,7 +4,7 @@ import GradientBox from "./GradientBox.astro";
 const {frontmatter } = Astro.props;
 ---
 
-<MainLayout>
+<MainLayout title={"Nikolaj: " + frontmatter.title} description={frontmatter.shortText}>
     <GradientBox showNavigation={true} showCopyRight={true}>
     <div class="blog-wrapper">
         <header class="blog-header">

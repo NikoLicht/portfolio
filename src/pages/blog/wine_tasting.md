@@ -4,7 +4,7 @@ title: Casual self hosted wine tasting.
 tags: ["Activities"]
 createdAt: 28/05/2025
 shortText: "Come for the pdf download, stay for the 'hosting a relaxed wine tasting for friends'."
-cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748457020/000068420038_01_bitu7c.png
+cover: https://res.cloudinary.com/dlb3lkuge/image/upload/q_auto/v1748457020/000068420038_01_bitu7c.png
 ---
 
 I recently hosted a little casual wine tasting for friends. The theme was 'Friendly Chaos'. Conceptually that meant that everyone was to bring one bottle of wine, no rules. It could be wine they liked drinking, wine they hated, or wine they just wanted to taste. For me it was mostly about trying to <mark>host a wine tasting, without making it super formal</mark>.
@@ -26,4 +26,10 @@ Feel free to <a href="https://drive.google.com/uc?export=download&id=1ahap54BhP6
 
 ### Improvements for next time
 Next time I will definitely <mark>enforce more strict rules for the wine</mark>, to ensure they are more easily comparable, hopefully leading to the participants ( myself included ) learning more. For instance, only red, only italian, only natural, only negro-amaro or something else, would lead to a better less chaotic understanding. Maybe even just a 'classical' grapes tasting would be cool. Yet hard to arrange.
+
+### What worked well
+- Pairwise comparative tasting was a success. Perhaps a bit challenging to keep track of what was in which glass.
+- Everybody brought snacks and foods. Thanks friends.
+- Using a jigger to pour even amounts for everyone worked well. We only had one of each bottle, and neither of us were precision pourers. 
+- The big dining table we have restored. Everyone had a place at the same table.
   
