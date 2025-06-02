@@ -24,7 +24,7 @@ I will have a hard time claiming that the <mark>digital features aren't nice</ma
 
 ### Loss of Transparency
 Introducing electronic circuits and digital displays in products comes at a cost. First of all, It is yet another thing that can break. A bottle opener has only a few breakpoints and they are hard to reach. However a bottle opener with a LCD-screen has a whole lot more.
-The same goes for motorcycles, or any other thing for that matter. More functionalities means more things that can break. The main problems with electronics can probably be addressed, but I'm not sure they always are. Here are my guesses on the biggest problems for consumers with dealing with electronics:
+The same goes for motorcycles, or any other thing for that matter. More functionalities means more things that can break. The main problems with electronics can probably be addressed, but I'm not sure they always are. This is my personal list of problems or challenges we face with electronics as regular consumers, without an engineering degree:
 
 - **Fragile**. Most electronics are quite fragile, due to the materials and sizes of components. This makes them a definite breakpoint in any consumer product. Often mitigated by enclosing them in a sort of protective case.
 - **Small**. We are really good at making small efficient components. But that also makes it all the more harder to repair, and things are often replaced rather than repaired. 
@@ -44,16 +44,25 @@ The loss of transparency is _clearly visible_ (ha) in many other contexts. You h
 Many contexts have been touched by the different waves of technology. You can't have a pizzaria without a website, a boarding pass without a QR code or a friendship without social media. Over the past few years many public services has been moved into apps. <mark>The technologies have not seeped into our world, our world has been submerged in a digital ocean</mark>. Though the pervasiveness of digital technologies and electronics can seem like the enemy, I think even the digital domain has been affected by the push for 'making our lives easier'. I'll explore the digital context below.
 
 #### The digital context
-At some point a long time ago, people wanted to make money. They already had an operating system for computers, MS-DOS. But it was fairly technical, being only text-based. If they could make it more user friendly by adding graphics, perhaps it could become successful. <mark>We are still on that timeline today</mark>. Many of the applications we use are graphical and not text based. Can you imagine using photoshop with just text? Neither can I. 
+We have not always had digital systems, but it too has been affected by various new technologies. Most recent is probably Large Language Models (LLMs). Suddenly LLMs is being put into every thinkable context. You mail, your operating system and in the videos you see online.
+LLMs have started to take over critical roles, such as handling critical and sensitive data. And just like with electronics on a bike, it can be hard to debug what is going wrong. But when it works it is pretty nice. 
+<sub>There are of course huge environmental costs, infrastructure costs, relying-on-computers-to-express-ourselves costs, sneaking-in-political-biases-costs and so on. Maybe a future blog post?</sub>. 
 
-The point is that the <mark>graphics are indeed nice, and make many amazing things possible, they also add a layer of things that can go wrong</mark>, or even be misrepresentative of what is actually happening on your computer. With a text based interface, textual user interface (TUI), you remove that layer, and what you type is what will happen. If you can spell.
+At some point a long time ago, people wanted to make money - whaaaaat???. They already had an operating system for computers, MS-DOS. But it was fairly technical, being only text-based. If they could make it more user friendly by adding graphics, perhaps it could become successful. <mark>We are still on that timeline today</mark>. Many of the applications we use are graphical and not text based. Can you imagine using photoshop with just text? Neither can I. 
 
-Just as I can buy an old motorcycle to get a taste of the hassle-free<sup>*</sup>, simply-working way-of-life, <mark>I can use my terminal</mark> to fire command-line-arguments and get a feel for the <mark>hassle-free<sup>**</sup>, simply-working way-of-digital-life</mark>.
+The point is that the <mark>graphics are indeed nice, and make many amazing things possible, they also add a layer of things that can go wrong</mark>, or even be misrepresentative of what is actually happening on your computer. With a git-client, you might not know for sure what happens when you press fetch. But with the command-line version, only what you type will happen. Then you have the control.
 
-<sup>*  </sup>  probably not entirely.<br>
-<sup>**</sup> definitely not.
+While the case I've made against graphics may have some truth to it. That applies to everything on the computer. The whole computer, the operating system and the applications are all reliant on vast amounts of code and infrastructure, both on the computer and externally. Graphics is just _one_ extra layer of things. LLMs is another layer. Your wifi-card a third layer and so on.
 
-#### Changes in habits and consumption
+The more technological advances we make and add onto our many layers of reliance, the less transparent our digital existence becomes. I have only highlighted a few technologies that have changed our digital life but there are many more. Defining a thing you can do to experience the 'old-way-of-life' like buying and driving a motorcycle, but for the digital context, asks a question about what the 'core' of digital really is? My best guesses are:
+
+1. Installing some version of Linux.
+2. Taking your terminal for a spin. Maybe using Vim, or Vi, for editing some files. 
+3. Using FFMPEG to clip together a movie of you vacation?
+4. Programming something in C?
+
+
+### Habits and consumption
 I've already written a bit about this in the post [Metal objects that facilitate our rituals forever](/portfolio/blog/solid_routines). But I'll add to it here. I think that I am not completely alone in focusing more and more on durability and expected lifespan when buying things. <mark>I like sturdy things that are repairable</mark>.
 
 Over the years we've bought many pieces of old furniture and restored and repaired it. Economically it has not been worth it, but on so many other levels it has. 
@@ -64,7 +73,7 @@ Over the years, I have been picking up a few screen-less hobbies, such as whittl
 
 
 ### So how do motorcycles work?
-To those, who have stuck around, or scrolled enough, to find this section here is <mark>my terrible explanation / overview of how a motorcycle works</mark>. It has multiple parts that all do their specific job. For the purpose of this post, I've chosen to focus on only a few of those elements. I can only recommend the video _7 Minute Motorcycle Teardown – Mechanic Crash Course_[^5] it is a really nice walkthrough of the components, and further provide a good visual of them. Good job following along in this list without any visual aid.
+To those, who have stuck around long enough, or scrolled long enough, to find this section, here is <mark>my terrible explanation / overview of how a motorcycle works</mark>. A motorcycle has many parts that all do their own respective job. For the purpose of this post, I've chosen to focus on only a few of those core parts. I can only recommend the video _7 Minute Motorcycle Teardown – Mechanic Crash Course_[^5] it is a really nice walkthrough of the components, and further provide a good visual of them. Good job following along in this list without any visual aid.
 
 - **Gas tank** contains the gas. And delivers it into the Carburetor(s).
 - **Carburetor's** job is to mix the gas with air. It uses a nozzle to create a mist. This is done because air + fuel allows us to get energy from the fuel[^6]. The throttle on the bike controls the amount of air, which results in bigger energy release[^5].
@@ -78,6 +87,9 @@ To those, who have stuck around, or scrolled enough, to find this section here i
 Honorary mentions: **brakes** brake, **clutch** disconnects engine from transmission, **kickstarter** starts the engine.
 
 This concludes my ted talk. Hope you learned something. I sure did. Until next time.
+
+### Reading list?
+- The Revenge of Analog: Real Things and Why They Matter. Seems like an interesting read some time.
  
 
 
