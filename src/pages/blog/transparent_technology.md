@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 title: Tranparent technology
 tags: ["Reflections", "Things"]
-createdAt: 05/06/2025
+createdAt: 02/06/2025
 shortText: Oh no! Digitalization of goods and the effects of it. Motorcycles, Command-line and handicrafts. How do motorcycles work?
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748876882/IMG20240129083328_mfyvtg.jpg
 ---
