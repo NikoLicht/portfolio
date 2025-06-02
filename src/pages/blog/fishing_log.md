@@ -31,6 +31,6 @@ So I recently started fishing a little with my friends, because we are yearning 
 ### Basic equipment that would be kinda nice to have
 1. Sea approved sunglasses with UV400 protection and CE approval.
 2. Some wool fingerless gloves. (Maybe knit them myself?).
-3. A net.
+3. A net, with silicone layer to not harm fish.
 4. A knife we agree is only for fish (because of smells).
 
