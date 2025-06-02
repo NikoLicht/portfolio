@@ -36,12 +36,14 @@ The same goes for motorcycles, or any other thing for that matter. More function
 
 I think all of the factors above contribute to the loss of transparency. Meaning that it is harder to fix, if your product stops working. Riding a bike specced-out with the newest digital breakthroughs, _self-driving, self-balancing, latte-art-making, etc._ is <mark>like riding a big mysterious box that you really hope does not break, as you have no chance of repairing it</mark>. While some of the features, like batteries and LEDs are (maybe?) much better for the environment, having to replace parts instead of repairing is terrible for the environment. Though the act of <mark>replacing is great for fueling the engine that runs our capitalist utopia</mark> so thank god for that.
 
-Back to the old bikes. They are of course not magical, and can break as well. They can even break in ways that are impossible to repair. They were much simpler though, with less parts that could break. Additionally, the reissued army bikes, were not exactly made with light-weight components[^4], making them even more durable and likely more repairable.
+Back to the old bikes. They are of course not magical, and can break as well. They can even break in ways that are impossible to repair. They were much simpler though, with less parts that could break. Additionally, the reissued army bikes, were not exactly made with light-weight components[^4], making them even more durable and likely more repairable. 
 
-### Was that it?
-No, the post is even longer. Sorry. The loss of transparency is clearly visible (ha) in many other contexts. You have probably noticed 'new' products that is just an old product with an LCD screen and some claim that it uses 'AI'. Some of these improvements **are** amazing. <mark>Some improvements are just a waste of resources</mark>, improving on something that was pretty good already.
+### Recontextualizing loss of transparency
+The loss of transparency is _clearly visible_ (ha) in many other contexts. You have probably noticed 'new' products that is just an old product with an LCD screen and some claim that it uses 'AI'. Some of these improvements **are** amazing and really do advance us. An example could be using machine learning for early detection of cancer. <mark>Other improvements are little more than a waste of resources</mark>, improving on something that was pretty good already.
 
-#### Digital contexts
+Many contexts have been touched by the different waves of technology. You can't have a pizzaria without a website, a boarding pass without a QR code or a friendship without social media. Over the past few years many public services has been moved into apps. <mark>The technologies have not seeped into our world, our world has been submerged in a digital ocean</mark>. Though the pervasiveness of digital technologies and electronics can seem like the enemy, I think even the digital domain has been affected by the push for 'making our lives easier'. I'll explore the digital context below.
+
+#### The digital context
 At some point a long time ago, people wanted to make money. They already had an operating system for computers, MS-DOS. But it was fairly technical, being only text-based. If they could make it more user friendly by adding graphics, perhaps it could become successful. <mark>We are still on that timeline today</mark>. Many of the applications we use are graphical and not text based. Can you imagine using photoshop with just text? Neither can I. 
 
 The point is that the <mark>graphics are indeed nice, and make many amazing things possible, they also add a layer of things that can go wrong</mark>, or even be misrepresentative of what is actually happening on your computer. With a text based interface, textual user interface (TUI), you remove that layer, and what you type is what will happen. If you can spell.
@@ -52,7 +54,7 @@ Just as I can buy an old motorcycle to get a taste of the hassle-free<sup>*</sup
 <sup>**</sup> definitely not.
 
 #### Changes in habits and consumption
-I've already written a bit about this in the post 'solid objects bla bla bla'. But I'll add to it here. I think that I am not completely alone in focusing more and more on durability and expected lifespan when buying things. <mark>I like sturdy things that are repairable</mark>.
+I've already written a bit about this in the post [Metal objects that facilitate our rituals forever](/portfolio/blog/solid_routines). But I'll add to it here. I think that I am not completely alone in focusing more and more on durability and expected lifespan when buying things. <mark>I like sturdy things that are repairable</mark>.
 
 Over the years we've bought many pieces of old furniture and restored and repaired it. Economically it has not been worth it, but on so many other levels it has. 
 I also tend to <mark>buy second hand tools</mark>, even really old ones. Especially corded power tools can live surprisingly long. I have two old Makita sanders [bo4561](https://www.makita.nl/artikel/makita-bo4561-230-v-handpalm-vlakschuurmachine.html) that still do their job very well.
@@ -61,7 +63,7 @@ In the digital domain, I tend to dive into the technical stuff, rather than rely
 Over the years, I have been picking up a few screen-less hobbies, such as whittling, knitting, playing guitar, board games, cocktails and cooking. One of the things I find particularly magnetizing about these hobbies is that there are <mark>no middle layers between me and the outcome</mark>. No software updates for the knitting needles, no new AI workflows for the guitar and no printer issues when cooking dinner. I think that many people (in my little bubble) are drawn to some of these hobbies to both get a break from screens, but also to <mark>regain some control over the outcomes</mark>. Direct control, where no middle-ware, middle-men or middle-processes are influencing the outcome or one's ability to control the outcome. So what I am saying is, <mark>welcome back to, and long live, handicrafts and craftsmanship</mark>.
 
 
-### How do motorcycles work?
+### So how do motorcycles work?
 To those, who have stuck around, or scrolled enough, to find this section here is <mark>my terrible explanation / overview of how a motorcycle works</mark>. It has multiple parts that all do their specific job. For the purpose of this post, I've chosen to focus on only a few of those elements. I can only recommend the video _7 Minute Motorcycle Teardown – Mechanic Crash Course_[^5] it is a really nice walkthrough of the components, and further provide a good visual of them. Good job following along in this list without any visual aid.
 
 - **Gas tank** contains the gas. And delivers it into the Carburetor(s).
