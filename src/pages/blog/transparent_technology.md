@@ -54,7 +54,7 @@ The point is that the <mark>graphics are indeed nice, and make many amazing thin
 
 While the case I've made against graphics may have some truth to it. That applies to everything on the computer. The whole computer, the operating system and the applications are all reliant on vast amounts of code and infrastructure, both on the computer and externally. Graphics is just _one_ extra layer of things. LLMs is another layer. Your wifi-card a third layer and so on.
 
-The more technological advances we make and add onto our many layers of reliance, the less transparent our digital existence becomes. I have only highlighted a few technologies that have changed our digital life but there are many more. Defining a thing you can do to experience the 'old-way-of-life' like buying and driving a motorcycle, but for the digital context, asks a question about what the 'core' of digital really is? My best guesses are:
+The more technological advances we make and add onto our many layers of reliance, the less transparent our digital existence becomes. I have only highlighted a few technologies that have changed our digital life but there are many more. Defining a thing you can do to experience the 'old-way-of-life' like buying and driving an old motorcycle, but for the digital context, asks a question about what the 'core' of digital really is? My best guesses are:
 
 1. Installing some version of Linux.
 2. Taking your terminal for a spin. Maybe using Vim, or Vi, for editing some files. 
@@ -73,7 +73,7 @@ Over the years, I have been picking up a few screen-less hobbies, such as whittl
 
 
 ### So how do motorcycles work?
-To those, who have stuck around long enough, or scrolled long enough, to find this section, here is <mark>my terrible explanation / overview of how a motorcycle works</mark>. A motorcycle has many parts that all do their own respective job. For the purpose of this post, I've chosen to focus on only a few of those core parts. I can only recommend the video _7 Minute Motorcycle Teardown – Mechanic Crash Course_[^5] it is a really nice walkthrough of the components, and further provide a good visual of them. Good job following along in this list without any visual aid.
+To those, who have stuck around -or scrolled down- long enough to find this section; here is <mark>my terrible explanation / overview of how a motorcycle works</mark>. A motorcycle has many parts that all do their own respective job. For the purpose of this post, I've chosen to focus on only a few of those core parts. I can only recommend the video _7 Minute Motorcycle Teardown – Mechanic Crash Course_[^5] it is a really nice walkthrough of the components, and further provide a good visual of them. Good job following along in this list without any visual aid.
 
 - **Gas tank** contains the gas. And delivers it into the Carburetor(s).
 - **Carburetor's** job is to mix the gas with air. It uses a nozzle to create a mist. This is done because air + fuel allows us to get energy from the fuel[^6]. The throttle on the bike controls the amount of air, which results in bigger energy release[^5].
@@ -88,8 +88,12 @@ Honorary mentions: **brakes** brake, **clutch** disconnects engine from transmis
 
 This concludes my ted talk. Hope you learned something. I sure did. Until next time.
 
-### Reading list?
+### Homework
+Here are some books tangential to the topics in this article. Some I would like to read, or have already read. Maybe you want to enjoy them with me?
+
 - The Revenge of Analog: Real Things and Why They Matter. Seems like an interesting read some time.
+- Zen and the Art of Motorcycle Maintenance, Robert M. Pirsig
+
  
 
 
