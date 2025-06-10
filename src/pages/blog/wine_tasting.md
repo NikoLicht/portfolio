@@ -19,6 +19,7 @@ As a means to keep track of the wines, I've created this wine tasting sheet / fo
 Feel free to <a href="https://drive.google.com/uc?export=download&id=1ahap54BhP6OmaXjw9ALFBY88Ug4JU5bk"  class="download-btn" download >download</a> the pdf, print and use it with your own friends and foes.
 
 <iframe 
+    class="iframe-drive"
     src="https://drive.google.com/file/d/1ahap54BhP6OmaXjw9ALFBY88Ug4JU5bk/preview" 
     allow="autoplay"
   >
