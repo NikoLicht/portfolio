@@ -40,7 +40,7 @@ Moving into a slightly different area, but staying in the water. Old sailing vid
 </iframe>
 
 ### Photography
-Featuring another of my hobbies here, analog photography. You will find many instructional videos about how to shoot a camera, how to use a light-meter, how to use the different rules, but they can at times become very clinical which is far removed from the reality of shooting on film. I like the somewhat new channel [Kodak Took My Money](https://www.youtube.com/@KodakTookMyMoney) for the relaxed and more 'real life' vibe of analog photography. Highly recommend the content and the humor.
+Featuring another of my hobbies here, analog photography. You will find many instructional videos about how to shoot a camera, how to use a light-meter, how to use the different rules, but they can at times become very clinical which is far removed from the reality of shooting on film. <mark>I like the somewhat new channel [Kodak Took My Money](https://www.youtube.com/@KodakTookMyMoney) for the relaxed and more 'real life' vibe of analog photography</mark>. Highly recommend the content and the humor.
 
 <iframe 
     class="iframe-youtube" 
