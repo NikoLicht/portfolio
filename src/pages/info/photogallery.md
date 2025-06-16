@@ -93,6 +93,17 @@ images:
     gear: Ikoflex IIa
     film: Kodak gold 200
     date: 04-2025
+  - title: Giant Flying Skeleton haunting Natural History Museum.
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1750070842/000043750016_01_f6rhwu.jpg"
+    gear: Pentax K2
+    film: Kodak gold 200
+    date: 04-2025
+  - title: Pigeons on a fountain in front of "Rådhuspladsen".
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1750070842/000043750036_01_teadls.jpg"
+    gear: Pentax K2
+    film: Kodak gold 200
+    date: 06-2025
+
     
 
 ---
