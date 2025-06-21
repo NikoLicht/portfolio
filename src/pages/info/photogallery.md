@@ -29,7 +29,7 @@ images:
     film: Kodak gold 200
     date: 01-2024
   - title: Felt cute, might delete later
-    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1748095129/000078550022.jpg_compressed_mnqexk.jpg"
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1750164199/000078550022.jpg_compressed_mnqexk.jpg"
     gear: Pentax k2
     film: Kodak gold 200
     date: 09-2024
@@ -57,7 +57,7 @@ images:
     link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1748095134/000037950008.jpg_compressed_duippd.jpg"
     gear: Pentax k2
     film: Kodak gold 200
-    date: 2024
+    date: 10-2024
   - title: Creepy Mountain fog
     link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1748095137/000037950009.jpg_compressed_ng45ha.jpg"
     gear: Pentax k2
@@ -103,6 +103,21 @@ images:
     gear: Pentax K2
     film: Kodak gold 200
     date: 06-2025
+  - title: Fisherman
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1750163082/000043750023_uzstx5.jpg"
+    gear: Pentax K2
+    film: Kodak gold 200
+    date: 05-2025
+  - title: Bay in Bacalar
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1750163081/000048550021_kvqajh.jpg"
+    gear: Pentax K2
+    film: Kodak gold 200
+    date: 02-2024
+  - title: Outdoor cooking is good for the soul
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1750163435/000068420016.png_compressed_vaxpgj.jpg"
+    gear: Pentax K2
+    film: Kodak gold 200
+    date: 01-2025
 
     
 
