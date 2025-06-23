@@ -158,6 +158,18 @@ p img {
   display: inline-block;
 }
 
+:global(gallery) {
+  width: 100%;
+}
+:global(gallery > p) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+:global(gallery p img) {
+  flex: 1 1 40%;
+}
 
 @media (max-width: 600px) {
   .blog-wrapper {
@@ -187,5 +199,15 @@ p img {
     border: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
+
+  :global(gallery) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  :global(gallery > p) {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
 
 </style>
