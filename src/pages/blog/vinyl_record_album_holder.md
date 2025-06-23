@@ -15,9 +15,9 @@ Not a lot of reflection here. Just a little story about building a shelf for hol
 
 Originally I considered two different designs, design A and B. But after talking with a carpenter at a family event, I was put onto the path of design C. 
 
-**Design A** is made by a single piece of wood, and will be mounted using keyhole hangers. It is relatively simple. But it will be hard to enure that the shelf does not wobble, as the keyhole hangers are in the same line and very hard to adjust. So relatively high precision is needed here, and probably a lot of fiddling.
+**Design A** is made by a single piece of wood, and will be mounted using keyhole hangers. It is relatively simple. But it will be hard to ensure that the shelf does not wobble, as the keyhole hangers are in the same line and very hard to adjust. So relatively high precision is needed here, and probably a lot of fiddling.
 
-**Design B** is made of two pieces of wood. Once piece will be mounted on the wall with sunken screws, inside a dovetail groove. The other piece of wood, will be joined in an unglued dovetail joint.  It is pretty cool, but I am unsure if i can pull it off. But given that I have access to a router (Bosch POF 1400 ACE), it might not be that bad. But I am missing a good dovetail bit, that is small enough for the shelf thickness.
+**Design B** is made of two pieces of wood. One piece will be mounted on the wall with sunken screws, inside a dovetail groove. The other piece of wood, will be joined in an unglued dovetail joint.  It is pretty cool, but I am unsure if i can pull it off. But given that I have access to a router (Bosch POF 1400 ACE), it might not be that bad. But I am missing a good dovetail bit, that is small enough for the shelf thickness.
 
 **Design C** is similar to design A, but it is mounted using classic floating shelf mounts. Which is basically just two rods mounted to the wall. The shape of the mount needs to be chiseled into the shelf, and the rods might need to be shortened, if they are too long.
 
