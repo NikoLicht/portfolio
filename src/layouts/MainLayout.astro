@@ -15,7 +15,28 @@ let { title, description } = Astro.props;
             title="RSS Feed"
             href="/rss.xml"
         />
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="4f98d5b4-f4db-4711-ade9-ceb862152909"></script>
+        <script>
+            window.addEventListener("load", () => {
+                console.log(window.location.href);
+                console.log(document.referrer);
+                console.log(navigator.userAgent);
+                fetch(
+                    "https://tz8uwuquia.execute-api.eu-north-1.amazonaws.com/track",
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                            url: "poul sørensen",
+                            referrer: document.referrer,
+                            userAgent: navigator.userAgent,
+                        }),
+                    },
+                );
+            });
+        </script>
+
         {description && <meta name="description" content={description} />}
     </head>
     <body>
