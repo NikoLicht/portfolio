@@ -54,5 +54,22 @@ I've never used a router. But one time spend a whole day riding a train and walk
 I cut the groove over a few passes, to not take away too much wood at a time. After having made the groove, I wanted to try a roundover bit. I had some difficulty adjusting it for the precise depth it needed to not make an edge. So after using the roundover bit, I gave the test-piece edge a little trim with the planer.
 
 
+### Testing and improving my chiseling game
+
+As I've never had to chisel before, I wanted to do a little chisel skill test. Im sure it will my way harder in walnut. But still practicing the technique is probably a good idea. For the first test, I used a drill in each end. In the second test I wanted to see if i could create a cleaner hole by only using the 10mm chisel.
+
+<gallery>
+
+![Using a drill for starting hole](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750774766/IMG20250624161608_ciddtt.jpg)
+![Using raw skills to make a hole](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750774766/IMG20250624161617_vfs7ty.jpg)
+
+</gallery>
+
+
+### UAT
+User acceptance testing! Having done the test-piece, I could hand my wife the test piece. And she did seem somewhat impressed. Through the test piece I got some hands-on experience with my tools, as well as a good idea of groove size (which is too big in the test piece). In the test I also broke the edges - a term for removing sharp sides of wood - so that it would not split as easily. That really made it feel more finished.
+
+Speaking of finishing. Im still not sure what kind of finish I need to put on the shelf. On one hand, it is just a shelf, and won't see the same hard use as a table, but on the other hand, the action it it will see is gonna be often and in the same spot. Maybe a wax finish is good? Maybe just oil? Maybe nothing?
+
 
 # To Be continued ... 

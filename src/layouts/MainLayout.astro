@@ -28,7 +28,7 @@ let { title, description } = Astro.props;
                             "Content-Type": "application/json",
                         },
                         body: JSON.stringify({
-                            url: "poul sørensen",
+                            url: window.location.href,
                             referrer: document.referrer,
                             userAgent: navigator.userAgent,
                         }),
@@ -36,7 +36,6 @@ let { title, description } = Astro.props;
                 );
             });
         </script>
-
         {description && <meta name="description" content={description} />}
     </head>
     <body>
