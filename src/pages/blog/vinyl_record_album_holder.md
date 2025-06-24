@@ -5,6 +5,7 @@ tags: ["Building"]
 createdAt: 21/06/2025
 shortText: How I managed to build a piece of wood with a groove in it.
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1750674547/IMG20250620134030_hhapda.jpg
+slug: building-vinyl-record-shelf
 ---
 
 Not a lot of reflection here. Just a little story about building a shelf for holding vinyl records. In essence it is a piece of wood with a groove in it. It 'should be relatively simple' and 'I have all the tools already' are some of the clever things I've said before starting.

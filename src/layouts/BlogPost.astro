@@ -1,6 +1,7 @@
 ---
 import MainLayout from "./MainLayout.astro";
 import GradientBox from "./GradientBox.astro";
+import CommentSection from "../components/CommentSection.astro";
 const {frontmatter } = Astro.props;
 ---
 
@@ -27,6 +28,8 @@ const {frontmatter } = Astro.props;
             <slot />
         </article>
     </div>
+
+    <CommentSection slug={frontmatter.slug}></CommentSection>
   </GradientBox>
 </MainLayout>
 
