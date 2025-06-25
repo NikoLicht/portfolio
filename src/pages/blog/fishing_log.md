@@ -5,6 +5,7 @@ tags: ["Activity", "Log"]
 createdAt: 27/05/2025
 shortText: "Follow along in my fishing adventures."
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748349006/IMG20250526195259_piafe0.png
+slug: fishing-log
 ---
 
 So I recently started fishing a little with my friends, because we are yearning for the ocean - or we are all just in our thirties. This is a log of that. We don't know a great deal about fishing, and only have used or cheap gear. 

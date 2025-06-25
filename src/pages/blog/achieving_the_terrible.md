@@ -5,6 +5,7 @@ tags: ["Reflections"]
 createdAt: 27/05/2025
 shortText: My process on creating terrible things - and fish math.
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748454841/IMG_20210811_090636634_geef45.jpg
+slug: achieve-the-terrible
 ---
 
 I am a creative person. I have an inner need to create, build and play. I have a tonne of projects, some more involved than others. _But how do you do it Nikolaj_ - you might ask. The answer is that:

@@ -5,6 +5,7 @@ tags: ["Recommendations"]
 createdAt: 11/06/2025
 shortText: Recommendations for your youtube feed circa mid 2025, colorized.
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1749585669/Nikolajs_sommerferie_billeder_2008_431_b1r2km.jpg
+slug: relaxing-content-25
 ---
 
 ### Fly fishing videos

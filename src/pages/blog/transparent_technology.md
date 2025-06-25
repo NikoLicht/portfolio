@@ -5,6 +5,7 @@ tags: ["Reflections", "Things"]
 createdAt: 02/06/2025
 shortText: Oh no! Digitization of goods and the effects of it. Motorcycles, Command-line and handicrafts. How do motorcycles work?
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748876882/IMG20240129083328_mfyvtg.jpg
+slug: transparent-technology
 ---
 
 I have been thinking a lot about tools, mechanics and machinery lately (_and I probably still am when you are reading this_). Maybe you have too? All my life, and probably yours, <mark>we have developed technology to make our lives easier</mark>. Humanity has probably done that for all of its existence. But as we have moved into an increasingly digital domain, the cost has become less obvious. We are now in a state, where an overwhelming amount of our lives are contained to, if not confined in, the digital space. The latest branch on the big tree of tech is AI.

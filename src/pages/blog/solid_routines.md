@@ -5,6 +5,7 @@ tags: ["Reflections"]
 createdAt: 22/05/2025
 shortText: I love things that last, so I can use them forever.
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748452192/IMG_20230323_174900_2_a7qliq.jpg
+slug: solid-routines
 ---
 
 The older I've gotten, the more I value things that will last and maybe even outlast me. This often impacts the material and constuction I am looking for. Often, i find myself looking for metals, as that is the 'golden' (haha) standard for durability.

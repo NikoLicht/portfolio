@@ -5,6 +5,7 @@ tags: ["Meta"]
 createdAt: 20/05/2025
 shortText: "Obligatory first post about the blog. And bingo."
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748426921/bingo_card_nvnlcx.jpg
+slug: first-post
 ---
 
 Welcome to the first blog post. For my 'bingo' card for 2025, I created a field, that said 'create a blog'. I've considered multiple approaches, even executed on a few of them. But after a talk with my buddy [frans](https://frans.today), I realized that the fastest way to check off that bingo field was to simply extend my portfolio website.

@@ -6,6 +6,7 @@ createdAt: 10/06/2025
 shortText: "How to not worry about things you can, cannot or canmaybe control. And finally someone telling you that you can carry an anchor around."
 headContent: 15 Different strategies for resolving worry anxiety for different times.
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1749564295/worried_building_ihbs4h.jpg
+slug: stop-worrying
 ---
 
 Sometimes we worry about the future.<br> Sometimes we worry _a lot_ about the future.<br> Sometimes we worry _too much_ about the future.<br> I would like to examine some different strategies for managing that. A big part of the work is to recognize if you are worried about something within your control, outside of your control or just on the border. In the text below I will give some self-brewed advice for those scenarios, namely: [In your control](#in-your-control), [In your control, but you lack resources](#in-your-control-but-you-dont-have-the-resources), [Not in your control](#not-in-your-control) and [Grey area](#in-the-vast-grey-area).

@@ -5,6 +5,7 @@ tags: ["Reflections"]
 createdAt: 25/05/2025
 shortText: How analog photography impacts my wallet and life.
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748452121/pentax_k2_sdcuoz.png
+slug: analog-photos
 ---
 
 I originally got into analog photography because I fell for mechanical feeling when trying out my friends Pentax K1000. The shutter and the winding mechanisms were particularly exciting. Soon after I got my hands on a Pentax K2 and some expired film that my parents had forgotten in a drawer.
