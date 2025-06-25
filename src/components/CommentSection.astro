@@ -1,6 +1,5 @@
 ---
 // Astro server-side
-import Comment from "./Comment.astro";
 const { slug } = Astro.props;
 
 // Replace with your deployed API Gateway endpoint:
@@ -14,29 +13,55 @@ const commentsApiUrl = "https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/
   </div>
 
   <form id="comment-form" class="comment-form">
-    <input name="name" placeholder="Your name" required />
-    <textarea name="comment" placeholder="Your comment" required></textarea>
+    <select name="name" required>
+      <option value="" disabled selected>Who are you?</option>
+      <option>Politically interested</option>
+      <option>Analog Photographer</option>
+      <option>Bike Mechanic</option>
+      <option>Robot.txt</option>
+      <option>Programmer</option>
+      <option>Philosopher</option>
+    </select>
+    <textarea name="comment" maxlength="180" placeholder="Your comment" required></textarea>
     <input type="hidden" name="slug" value={slug} />
     <button type="submit">Send</button>
   </form>
 
-
   <script type="module">
     const form = document.getElementById("comment-form");
     const commentList = document.getElementById("comment-list");
-    const apiUrl = `${"https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/comments"}?slug=${encodeURIComponent(form.slug.value)}`;
-    console.log(encodeURIComponent(form.slug.value));
+    const apiUrl = `https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/comments?slug=${form.slug.value}`;
+
+    function commentTemplate({ name, content, timestamp }) {
+      let date = "";
+      if (timestamp) {
+        const d = new Date(timestamp);
+        // Format: 01 April 20:58
+        const day = String(d.getDate()).padStart(2, "0");
+        const month = d.toLocaleString("default", { month: "long" });
+        const time = d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+        date = `${day} ${month} ${time}`;
+      }
+      return `
+        <div class="comment">
+          <div class="comment-meta">
+            <strong>${name}</strong>
+            <span class="comment-date">${date}</span>
+          </div>
+          <div class="comment-content">${content}</div>
+        </div>
+      `;
+    }
 
     async function loadComments() {
       try {
         const res = await fetch(apiUrl);
         const data = await res.json();
+        console.log(data);
         commentList.innerHTML = "";
-        if (data && data.comments && data.comments.length > 0) {
-          data.comments.forEach(c => {
-            const div = document.createElement("div");
-            div.innerHTML = `<strong>${c.name}</strong>: ${c.content}`;
-            commentList.appendChild(div);
+        if (data && data.length > 0) {
+          data.forEach(c => {
+            commentList.insertAdjacentHTML("beforeend", commentTemplate(c));
           });
         } else {
           commentList.innerHTML = "<p>No comments yet.</p>";
@@ -64,6 +89,7 @@ const commentsApiUrl = "https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/
 
         const result = await res.json();
         if (result.success) {
+          commentList.insertAdjacentHTML("beforeend", commentTemplate({name, content, articleSlug: slug}));
           form.reset();
           await loadComments();
         } else {
@@ -81,33 +107,98 @@ const commentsApiUrl = "https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/
 
 <style>
 .comment-section {
-  margin-top: 2em;
+    width: 60%;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    background-color: #eee;
 }
+.comment-section h3{
+  font-size: x-large;
+  margin: 0 0 1em 0;
+}
+
 .comment-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.5em;
   margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  align-items: flex-start;
 }
-.comment-form input,
-.comment-form textarea {
+
+.comment-form select,
+.comment-form textarea,
+.comment-form button {
   font-size: 1em;
+  box-sizing: border-box;
   padding: 0.5em;
   border-radius: 0.3em;
   border: 1px solid #ccc;
+  align-self: stretch;
+  font-size: small;
+}
+.comment-form select {
+  text-align: center;
+  max-width: 120px;
+}
+.comment-form textarea {
+  flex: 1 1 auto;
+  min-width: 120px;
+  resize: none;
 }
 .comment-form button {
-  width: fit-content;
-  padding: 0.5em 1.2em;
-  border-radius: 0.3em;
   border: none;
   background: #333;
   color: #fff;
   cursor: pointer;
+  min-width: 80px;
 }
 .comment-list {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+}
+:global(.comment) {
+  background-color: #f7f7f7;
+  padding: 0.7em 1em;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+.comment-meta {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 0.2em;
+}
+.comment-date {
+  color: #888;
+  float: right;
+  font-size: 0.9em;
+}
+.comment-content {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 600px) {
+  .comment-section {
+    width: 90%;
+    padding: 1rem;
+    margin: 1em auto;
+  }
+}
+@media (max-width: 700px) {
+  .comment-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .comment-form select,
+  .comment-form textarea,
+  .comment-form button {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 </style>
