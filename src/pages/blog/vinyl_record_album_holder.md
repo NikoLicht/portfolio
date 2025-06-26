@@ -73,4 +73,35 @@ User acceptance testing! Having done the test-piece, I could hand my wife the te
 Speaking of finishing. Im still not sure what kind of finish I need to put on the shelf. On one hand, it is just a shelf, and won't see the same hard use as a table, but on the other hand, the action it it will see is gonna be often and in the same spot. Maybe a wax finish is good? Maybe just oil? Maybe nothing?
 
 
+### Starting the "actual" shelf
+Now my actual work on the shelf could start. I felt like I had tested what I could. I was now just waiting for the floating shelf mounts to arrive in the mail. It only took a few days, and here we are.
+But as cautious as I am, I have ordered two pieces of walnut wood. That ensures that I can burn the first pancake. So I am starting with the ugliest piece of wood.
+
+![Starting with the walnut wood](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750970443/IMG20250626144241_xh0lq1.jpg)
+*Starting with the walnut*
+
+#### Learnings
+1. I did not have all the tools I needed. I thought that I had a 12mm wood drill bit. But I only had a drill-bit meant for concrete walls. Not super useful here. So after a little bike trip (again) I was all good 12mm-drill-wise. Lesson: always have a 12mm drill-bit.
+2. I took a way too deep first pass with the router. I guess that I forgot to account for the hardness of the wood. This made the router jump a bit, which made for a bumpy edge on the groove.
+3. I attempted to pre-drill the 12mm holes with a 10mm drill. That actually made it way harder to expand later. 
+
+
+### More untested stuff
+As I have bought invisible shelf mounts that are for relatively deep shelves, I've had to cut them shorter. A good workout for the arms. Last time I did this, I had no idea that you had to oil the saw.
+
+I also took my Milescraft DrillMate™ in use for drilling the holes for the mount bars. It is not super mega stable, but it gives a way better result than I could au natural.
+
+<gallery>
+
+![Cutting the nut](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750970439/IMG20250626153011_mw4lml.jpg)
+![Cut nut](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750970441/IMG20250626153703_ufi0cv.jpg)
+![Drilling setup](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750970444/IMG20250626152537_azshn1.jpg)
+
+</gallery>
+
+### Fitting the mounts
+This is the most time consuming (for now). I have to make the positive imprint of the entire mount. I've been drilling some of it, to get a sense of the needed depth. But chiseling out all the material for the hardwood is particularly hard.
+
+![Fit of the mount](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750970442/IMG20250626184811_iaqehj.jpg)
+
 # To Be continued ... 
