@@ -23,20 +23,18 @@ Originally I considered two different designs, design A and B. But after talking
 **Design C** is similar to design A, but it is mounted using classic floating shelf mounts. Which is basically just two rods mounted to the wall. The shape of the mount needs to be chiseled into the shelf, and the rods might need to be shortened, if they are too long.
 
 ### The wood
-For this project I choose walnut. I did not research a lot beforehand. But it sounded very cool to say "I'm building it in walnut". I found a place where they sold walnut wood in roughly the dimensions i needed. I thought that I would get some wood with a finish that was shelf ready. However the surfaces was pretty rough, due to tearout during during manufacturing.
+For this project I choose walnut. <mark>I did not research a lot beforehand. But it sounded very cool </mark> to say "I'm building it in walnut". I found a place where they sold walnut wood in roughly the dimensions i needed. I thought that I would get some wood with a finish that was shelf ready. However the surfaces was pretty rough, due to tearout during during manufacturing.
 
 In order to resolve this I decided to look for a Stanley finishing planer. I found one being sold by a sweet elderly lady 14km away from my home. After a 28 km bike ride in headwind, I now had a rusty Stanley no 4 planer. After fiddling with it and testing on some softer scrap wood, I gave it a try on the walnut. 
 
-Quickly I discovered that walnut is harder, and required a bit more finesse and attention to grain direction. It became a bit easier once I realized the effect of slightly rotating the planer. This is how it went.
+Quickly I discovered that walnut is harder, and required a bit more finesse and attention to grain direction. <mark>I knew it, but my hands didn't</mark>. It became a bit easier once I realized the effect of slightly rotating the planer. But perhaps sharpening the iron, but that is a task for another time. This is how it went.
 
 ![Planing the walnut](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750674547/IMG20250620134030_hhapda.jpg)
 
 ![Before and after planing](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750503351/wood_sckigo.jpg)
 *Before and after planing*
 
-I think I still need to sand it quite a bit though. But the surface is somewhat nice, considering that I've never really planed before.
-
-
+I think I still need to sand it quite a bit though. But the surface is somewhat nice, considering that I've never really planed anything before.
 
 
 ### Testing out router setup
@@ -57,7 +55,7 @@ I cut the groove over a few passes, to not take away too much wood at a time. Af
 
 ### Testing and improving my chiseling game
 
-As I've never had to chisel before, I wanted to do a little chisel skill test. Im sure it will my way harder in walnut. But still practicing the technique is probably a good idea. For the first test, I used a drill in each end. In the second test I wanted to see if i could create a cleaner hole by only using the 10mm chisel.
+As I've also never had to chisel before, I wanted to do a little chisel skill test. Im sure it will be way harder in walnut. But still practicing the technique is probably a good idea. For the first test, I used a drill in each end. In the second test I wanted to see if i could create a cleaner hole by only using the 10mm chisel.
 
 <gallery>
 
@@ -68,7 +66,7 @@ As I've never had to chisel before, I wanted to do a little chisel skill test. I
 
 
 ### UAT
-User acceptance testing! Having done the test-piece, I could hand my wife the test piece. And she did seem somewhat impressed. Through the test piece I got some hands-on experience with my tools, as well as a good idea of groove size (which is too big in the test piece). In the test I also broke the edges - a term for removing sharp sides of wood - so that it would not split as easily. That really made it feel more finished.
+User acceptance testing! Having done the test-piece, I could hand my wife the test piece. <mark>And she did seem somewhat impressed</mark>. Through the test piece I got some hands-on experience with my tools, as well as a good idea of groove size (which is too big in the test piece). In the test I also broke the edges - a term for removing sharp sides of wood - so that it would not split as easily. That really made it feel more finished.
 
 Speaking of finishing. Im still not sure what kind of finish I need to put on the shelf. On one hand, it is just a shelf, and won't see the same hard use as a table, but on the other hand, the action it it will see is gonna be often and in the same spot. Maybe a wax finish is good? Maybe just oil? Maybe nothing?
 
