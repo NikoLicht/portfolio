@@ -32,32 +32,43 @@ const commentsApiUrl = "https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/
     const commentList = document.getElementById("comment-list");
     const apiUrl = `https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/comments?slug=${form.slug.value}`;
 
-    function commentTemplate({ name, content, timestamp }) {
-      let date = "";
-      if (timestamp) {
-        const d = new Date(timestamp);
-        // Format: 01 April 20:58
-        const day = String(d.getDate()).padStart(2, "0");
-        const month = d.toLocaleString("default", { month: "long" });
-        const time = d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-        date = `${day} ${month} ${time}`;
-      }
-      return `
-        <div class="comment">
-          <div class="comment-meta">
-            <strong>${name}</strong>
-            <span class="comment-date">${date}</span>
-          </div>
-          <div class="comment-content">${content}</div>
-        </div>
-      `;
+  function renderPlainText(text) {
+    return text
+      .replace(/&/g, "&amp;")   
+      .replace(/</g, "&lt;")    
+      .replace(/>/g, "&gt;")    
+      .replace(/"/g, "&quot;")  
+      .replace(/'/g, "&#039;")  
+      .replace(/\n/g, "<br>");  
+  }
+
+
+  function commentTemplate({ name, content, timestamp }) {
+    let date = "";
+    if (timestamp) {
+      const d = new Date(timestamp);
+      const day = String(d.getDate()).padStart(2, "0");
+      const month = d.toLocaleString("default", { month: "long" });
+      const time = d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      date = `${day} ${month} ${time}`;
     }
+
+    return `
+      <div class="comment">
+        <div class="comment-meta">
+          <span class="comment-author">${renderPlainText(name)}</span>
+          <span class="comment-date">${renderPlainText(date)}</span>
+        </div>
+        <div class="comment-content">${renderPlainText(content)}</div>
+      </div>
+    `;
+  }
+
 
     async function loadComments() {
       try {
         const res = await fetch(apiUrl);
         const data = await res.json();
-        console.log(data);
         commentList.innerHTML = "";
         if (data && data.length > 0) {
           data.forEach(c => {
@@ -89,7 +100,12 @@ const commentsApiUrl = "https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/
 
         const result = await res.json();
         if (result.success) {
-          commentList.insertAdjacentHTML("beforeend", commentTemplate({name, content, articleSlug: slug}));
+          commentList.insertAdjacentHTML("beforeend", commentTemplate(
+            {
+              name: result.comment.name, 
+              content: result.comment.content, 
+              timestamp: result.comment.timestamp
+            }));
           form.reset();
           await loadComments();
         } else {
@@ -167,18 +183,21 @@ const commentsApiUrl = "https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/
   border-radius: 0.5em;
   font-size: 1em;
 }
-.comment-meta {
+:global(.comment-meta){
   display: flex;
   gap: 1em;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 0.2em;
 }
-.comment-date {
+:global(.comment-author){
+  font-weight: bold;
+}
+:global(.comment-date){
   color: #888;
-  float: right;
   font-size: 0.9em;
 }
-.comment-content {
+:global(.comment-content){
   white-space: pre-wrap;
 }
 

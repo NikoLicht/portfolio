@@ -8,6 +8,7 @@ let { title, description } = Astro.props;
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/portfolio/hmm.ico" />
         <title>{title}</title>
         <link
             rel="alternate"
@@ -17,9 +18,6 @@ let { title, description } = Astro.props;
         />
         <script>
             window.addEventListener("load", () => {
-                console.log(window.location.href);
-                console.log(document.referrer);
-                console.log(navigator.userAgent);
                 fetch(
                     "https://tz8uwuquia.execute-api.eu-north-1.amazonaws.com/track",
                     {
