@@ -8,7 +8,7 @@ cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1750674547/IMG20250620
 slug: building-vinyl-record-shelf
 ---
 
-Not a lot of reflection here. Just a little story about building a shelf for holding vinyl records. In essence it is a piece of wood with a groove in it. It 'should be relatively simple' and 'I have all the tools already' are some of the clever things I've said before starting.
+Not a lot of reflection here. Just a little story about building a shelf for holding vinyl records. <mark>In essence it is a piece of wood with a groove in it</mark>. It 'should be relatively simple' and 'I have all the tools already' are some of the clever things I've said before starting.
 
 ### Design
 ![Two different designs, A and B](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750501375/record_holder_design_gr2di2.png)
@@ -20,14 +20,14 @@ Originally I considered two different designs, design A and B. But after talking
 
 **Design B** is made of two pieces of wood. One piece will be mounted on the wall with sunken screws, inside a dovetail groove. The other piece of wood, will be joined in an unglued dovetail joint.  It is pretty cool, but I am unsure if i can pull it off. But given that I have access to a router (Bosch POF 1400 ACE), it might not be that bad. But I am missing a good dovetail bit, that is small enough for the shelf thickness.
 
-**Design C** is similar to design A, but it is mounted using classic floating shelf mounts. Which is basically just two rods mounted to the wall. The shape of the mount needs to be chiseled into the shelf, and the rods might need to be shortened, if they are too long.
+**Design C** is similar to design A, but it is mounted using classic floating shelf mounts. Which is <mark>basically just two rods mounted to the wall</mark>. The shape of the mount needs to be chiseled into the shelf, and the rods might need to be shortened, if they are too long.
 
 ### The wood
 For this project I choose walnut. <mark>I did not research a lot beforehand. But it sounded very cool </mark> to say "I'm building it in walnut". I found a place where they sold walnut wood in roughly the dimensions i needed. I thought that I would get some wood with a finish that was shelf ready. However the surfaces was pretty rough, due to tearout during during manufacturing.
 
 In order to resolve this I decided to look for a Stanley finishing planer. I found one being sold by a sweet elderly lady 14km away from my home. After a 28 km bike ride in headwind, I now had a rusty Stanley no 4 planer. After fiddling with it and testing on some softer scrap wood, I gave it a try on the walnut. 
 
-Quickly I discovered that walnut is harder, and required a bit more finesse and attention to grain direction. <mark>I knew it, but my hands didn't</mark>. It became a bit easier once I realized the effect of slightly rotating the planer. But perhaps sharpening the iron, but that is a task for another time. This is how it went.
+Quickly I discovered that walnut is harder, and required a bit more finesse and attention to grain direction. <mark>I knew it before starting, but my hands didn't</mark>. It became a bit easier once I realized the effect of slightly rotating the planer. But perhaps sharpening the iron, but that is a task for another time. This is how it went.
 
 ![Planing the walnut](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750674547/IMG20250620134030_hhapda.jpg)
 
@@ -39,7 +39,8 @@ I think I still need to sand it quite a bit though. But the surface is somewhat 
 
 ### Testing out router setup
 
-I've never used a router. But one time spend a whole day riding a train and walking the country side, just to pick up a Bosch POF 1400 Ace at a good price. Finally the time has come to do some testing. I found a scrap piece of wood and tested out the beast. Here is how it went.
+I've never used a router before. But one time spend a whole day riding a train and walking the country side, just to pick up a Bosch POF 1400 Ace at a good price, hoping to use it one day. My reasoning behind specifically the 1400 model, and not the 11-, 12- or 1300 was that 1400 has ⚡MORE POWER⚡ (1400 watts), finer adjustments and can handle both 6mm and 8mm bits. Not sure I am ever gonna use those features, but still pretty nice.
+Finally the time has come to do some testing. I found a scrap piece of wood and tested out the beast. Here is how it went.
 
 
 <gallery>
@@ -79,15 +80,17 @@ But as cautious as I am, I have ordered two pieces of walnut wood. That ensures 
 *Starting with the walnut*
 
 #### Learnings
-1. I did not have all the tools I needed. I thought that I had a 12mm wood drill bit. But I only had a drill-bit meant for concrete walls. Not super useful here. So after a little bike trip (again) I was all good 12mm-drill-wise. Lesson: always have a 12mm drill-bit.
-2. I took a way too deep first pass with the router. I guess that I forgot to account for the hardness of the wood. This made the router jump a bit, which made for a bumpy edge on the groove.
-3. I attempted to pre-drill the 12mm holes with a 10mm drill. That actually made it way harder to expand later. 
+1. I did not have all the tools I needed (a lesson for every project). 
+2. I thought that I had a 12mm wood drill bit. But I only had a drill-bit meant for concrete walls. Not super useful here. So after a little bike trip (again) I was all good 12mm-drill-wise. Lesson: always have a 12mm drill-bit.
+3. I took a way too deep first pass with the router. I guess that I forgot to account for the hardness of the wood. This made the router jump a bit, which made for a bumpy edge on the groove. Lesson: go slower and finer.
+4. I attempted to pre-drill the 12mm holes with a 10mm drill. That actually made it way harder to expand later. <mark>Lesson: don't do that.</mark>
+5. When using the round-over and needing to set the depth with a plunge router; plunge down the router until the bits edge rests on the top of your wood.
 
 
 ### More untested stuff
-As I have bought invisible shelf mounts that are for relatively deep shelves, I've had to cut them shorter. A good workout for the arms. Last time I did this, I had no idea that you had to oil the saw.
+As I have bought invisible shelf mounts that are for relatively deep shelves, I've had to cut them shorter. A good workout for the arms. Last time I did this, I had no idea that you had to oil the saw. But this time <mark>I had learned from my high-pitch-noise mistakes of the past</mark>.
 
-I also took my Milescraft DrillMate™ in use for drilling the holes for the mount bars. It is not super mega stable, but it gives a way better result than I could au natural.
+I also took my Milescraft DrillMate™ in use for drilling the holes for the mount bars. It is not super mega stable, but it gives a way better result than I could _au natural_. Im actually really impressed, but also not sponsored.
 
 <gallery>
 
@@ -98,7 +101,7 @@ I also took my Milescraft DrillMate™ in use for drilling the holes for the mou
 </gallery>
 
 ### Fitting the mounts
-This is the most time consuming (for now). I have to make the positive imprint of the entire mount. I've been drilling some of it, to get a sense of the needed depth. But chiseling out all the material for the hardwood is particularly hard.
+This is the most time consuming (for now). I have to make the positive imprint of the entire mount. I've been drilling some of it, to get a sense of the needed depth. But chiseling out all the material for the hardwood is particularly hard. For next time, I'll pre-drill more, as it takes a lot of work to remove that much with just a chisel. That being said, having a [router plane](https://www.supertool.com/StanleyBG/stan10.htm) would hit hard. Called _nothøvl_ in Danish for anyone interested.
 
 ![Fit of the mount](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750970442/IMG20250626184811_iaqehj.jpg)
 
