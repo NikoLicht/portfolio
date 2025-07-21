@@ -24,7 +24,7 @@ const commentsApiUrl = "https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/
     </select>
     <textarea name="comment" maxlength="180" placeholder="Your comment" required></textarea>
     <input type="hidden" name="slug" value={slug} />
-    <button type="submit">Send</button>
+    <button id="submit-button" type="submit">Send</button>
   </form>
 
   <script type="module">
@@ -89,6 +89,8 @@ const commentsApiUrl = "https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/
       const content = form.comment.value;
       const slug = form.slug.value;
 
+      document.getElementById("submit-button").disabled = true;
+
       try {
         const res = await fetch("https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/comments", {
           method: "POST",
@@ -108,6 +110,7 @@ const commentsApiUrl = "https://2r1id8b5i3.execute-api.eu-north-1.amazonaws.com/
             }));
           form.reset();
           await loadComments();
+          document.getElementById("submit-button").disabled = false;
         } else {
           alert("Failed to post comment.");
         }
