@@ -4,11 +4,14 @@ title: Over-engineered modern speech distribution
 tags: ["Building"]
 createdAt: 20/07/2025
 shortText: How to build an over-engineered modern speech distribution system
-cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1748452121/pentax_k2_sdcuoz.png
+cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1753909960/speech_cover_iugsx7.png
 slug: speech-distribution-system
 ---
 
 Recently I was attending a wedding, where the groom and bride were from Germany and Denmark. They wanted family and friends to be able to follow along in the speeches, no matter what language the speeches were spoken in. The tricky part was that the bride and groom also wanted to ensure that the guests should not be able to read / peak ahead. I thought about this. But because it was one of my best friends, I thought **a lot** about it.
+
+![Not the speech in question](https://res.cloudinary.com/dlb3lkuge/image/upload/v1753909960/speech_cover_iugsx7.png)
+*Not the speech in question, simply some neatly arranged pixels to look at*
 
 ### Problem definition
 - Share speeches as text
@@ -36,19 +39,81 @@ Upon inspecting this, and doing some math. We can calculate that each danish spe
 Maybe I could make a QR code that linked to the speech. Well yes, but also no. Simply making a QR code that links to the speech will allow everyone to read ahead. But this is where I had a big brain moment. I could maybe make the speeches into password protected pdfs. After a quick test, this was the obvious solution, and the steps was relatively straight forward.
 
 ### Solution
-
+I am in a period where I really enjoy working from command-line. It's a long period. I have an affinity for commandline. 
 ```mermaid
-architecture-beta
-    group api(cloud)[API]
+   graph TD
+    subgraph Speaker
+        download[Speech from sources] 
+    end
 
-    service db(database)[Database] in api
-    service disk1(disk)[Storage] in api
-    service disk2(disk)[Storage] in api
-    service server(server)[Server] in api
+    subgraph nushell
+        subgraph Nushell Function
+            pandoc[Pandoc
+            *Converts to .pdf*]
+            pdftk[PDFtk
+            Adds password protection]
+            miktex[MikTeX
+            Does magic]
+        end
+    end
 
-    db:L -- R:server
-    disk1:T -- B:server
-    disk2:T -- B:db
+    subgraph Web
+        drive[Drive
+        Storing password protected speech]
+        tinyurl[TinyURL
+        shortens url]
+        qrcode[QRCode
+        Enables easy scanning]
+    end
 
+    download --> pandoc
+    pandoc --> miktex
+    miktex --> pandoc
+    pandoc --> pdftk
+
+    pdftk  --> drive
+    drive  --> tinyurl
+    tinyurl --> qrcode
+    qrcode --> print
 
 ```
+
+### The implementation
+Below you see the nushell script. I realize it makes a pretty weird temp name. But it works, so why fix?
+```nu
+def secure-pdf [input: string, output: string, password: string] {
+let temp = $"($output)-temp.pdf"
+
+pandoc $input -o $temp -V documentclass=extarticle -V fontsize=20pt -V geometry:margin=1.5cm
+
+pdftk $temp output $output user_pw $password
+
+rm $temp
+}
+```
+
+
+The usage is basically
+```sh
+secure-pdf 'speech_german.docx' german.pdf radio
+```
+
+### Choosing a <input value="password" type="password">
+
+Given that the languages spoken were German, Danish and English, I asked ChatGPT to list all overlapping words in those languages. This enabled me to pick simple passwords that no one would have a hard time spelling. Below you will find a delightfully redundant table.
+
+| English   | German       | Danish       |
+|-----------|--------------|--------------|
+| Cola      | Cola         | Cola         |
+| Taxi      | Taxi         | Taxi         |
+| Radio     | Radio        | Radio        |
+| Hotel     | Hotel        | Hotel        |
+| Computer  | Computer     | Computer     |
+| Bank      | Bank         | Bank         |
+| Bus       | Bus          | Bus          |
+| Film      | Film         | Film         |
+| Park      | Park         | Park         |
+| Restaurant| Restaurant   | Restaurant   |
+
+### Finishing touch
+After this it was simply uploading the pdf's to google drive, setting each share link to 'everyone has access' and feed that link into [tinyurl](https://tinyurl.com/) to get a smaller url and a more easily recognizable QR code.
