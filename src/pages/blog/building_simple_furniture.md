@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 title: Crafting a workbench in real life.
 tags: ["Building"]
-createdAt: 30/07/2025
+createdAt: 04/08/2025
 shortText: Trying my hands at primitive furniture crafting. 
 cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1754338494/IMG_20250727_191628_dyxhg0.jpg
 slug: building-simple-furniture 
@@ -19,6 +19,7 @@ We started out with a little sawing competition which was a little intense. In t
 ### What am I even doing?
 I did not really know what it was going to be, but I just had an idea of the tools I'd like to use and the joints I'd like to try to make. I also really wanted to try splitting a big log that was left behind by a logging company. I wanted to do a drilled joints and some very simple wedged joints. I wanted to use a hand drill, axes, some big saws, axes, some iron and wooden wedges, a super big metal hammer and a beautiful (super dusty) stanley plane.
 ![They see me planin', they hatin](https://res.cloudinary.com/dlb3lkuge/image/upload/v1754338492/IMG_20250730_085002_4_q0ia46.jpg)
+*This is how happy I am when building stuff with cool tools*
 
 ### The work bench
 Initially I was trying to build something where we could rest our campfire utensils and food on when grilling. But after surprising myself by building something sturdy, I realized I had built a bench. 
