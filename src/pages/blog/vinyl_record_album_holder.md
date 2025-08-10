@@ -3,12 +3,15 @@ layout: ../../layouts/BlogPost.astro
 title: Building a vinyl record sleeve shelf.
 tags: ["Building"]
 createdAt: 21/06/2025
-shortText: How I managed to build a piece of wood with a groove in it.
-cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1750674547/IMG20250620134030_hhapda.jpg
+shortText: How I managed to build a piece of wood with a groove in it, sturdy enough to hold both light jazz and heavy metal.
+cover: https://res.cloudinary.com/dlb3lkuge/image/upload/v1754830634/IMG20250810133836_towvhh.jpg
 slug: building-vinyl-record-shelf
 ---
 
 Not a lot of reflection here. Just a little story about building a shelf for holding vinyl records. <mark>In essence it is a piece of wood with a groove in it</mark>. It 'should be relatively simple' and 'I have all the tools already' are some of the clever things I've said before starting.
+
+![Final result](https://res.cloudinary.com/dlb3lkuge/image/upload/v1754830634/IMG20250810133836_towvhh.jpg)
+*Final result / what to expect if you keep reading*
 
 ### Design
 ![Two different designs, A and B](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750501375/record_holder_design_gr2di2.png)
@@ -83,8 +86,8 @@ But as cautious as I am, I have ordered two pieces of walnut wood. That ensures 
 1. I did not have all the tools I needed (a lesson for every project). 
 2. I thought that I had a 12mm wood drill bit. But I only had a drill-bit meant for concrete walls. Not super useful here. So after a little bike trip (again) I was all good 12mm-drill-wise. Lesson: always have a 12mm drill-bit.
 3. I took a way too deep first pass with the router. I guess that I forgot to account for the hardness of the wood. This made the router jump a bit, which made for a bumpy edge on the groove. Lesson: go slower and finer.
-4. I attempted to pre-drill the 12mm holes with a 10mm drill. That actually made it way harder to expand later. <mark>Lesson: don't do that.</mark>
-5. When using the round-over and needing to set the depth with a plunge router; plunge down the router until the bits edge rests on the top of your wood.
+4. I attempted to pre-drill the 12mm holes with a 9mm drill. That actually made it way harder to expand later. <mark>Lesson: don't do that.</mark>
+5. When using the round-over and needing to set the depth with a plunge router; plunge down the router until the bits edge rests on the top of your wood. I mean the workpiece.
 
 
 ### More untested stuff
@@ -105,4 +108,39 @@ This is the most time consuming (for now). I have to make the positive imprint o
 
 ![Fit of the mount](https://res.cloudinary.com/dlb3lkuge/image/upload/v1750970442/IMG20250626184811_iaqehj.jpg)
 
-# To Be continued ... 
+### Installation
+After some weeks of contemplation, full weekends and more, I've finally managed to put up the shelf. I gave it a quick little sand before putting it up. I know I should give it a finish, but I just really wanted to put it up to get those sweet wife-approval points.
+
+<mark>90% of drilling holes in the wall is measuring where to drill</mark>. After some fidgeting, I got the holes measured and everything looked good.
+![Putting up the mounts](https://res.cloudinary.com/dlb3lkuge/image/upload/v1754829446/IMG20250810125254_qhqux2.jpg)
+*Mounts looking good*
+
+### Almost swearing and giving up.
+I had been very precise, but knew it could still be a problem. I was just about to give up completely, when i discovered that the rods could be moved on the mounts. The millimeter adjustments needed was crucial, as I wanted a tight fit. There was no room for error or slack. <mark>Which in hindsight might not have been the smartest.</mark>
+
+### Success after all!
+When I finally got the rods a single cm on, I became more hopeful. But it seemed that it would not go further. But that is when I realized just how tight the fit was. <mark>This was one of those rare problems that actually has to be solved by a hammer </mark>.
+
+<Gallery>
+
+![Finally up on the wall](https://res.cloudinary.com/dlb3lkuge/image/upload/v1754829483/IMG20250810132031_xwmuru.jpg)
+![Profile view / see how close to the wall it is](https://res.cloudinary.com/dlb3lkuge/image/upload/v1754829505/IMG20250810132036_rssuqh.jpg)
+
+</Gallery>
+
+#### Testing with records
+Here I am testing with records of different size and genre. The shelf needs to be stable enough to hold heavy metal as well as light Jazz. (Sorry)
+- 1 disc, [Jungle, Volcano, 2023](https://www.discogs.com/master/3197244-Jungle-Volcano)
+- 3 discs, [The Neal Morse band, The great adventure, 2019](https://www.discogs.com/master/1490860-The-Neal-Morse-Band-The-Great-Adventure)
+
+
+<Gallery>
+
+![Jungle, Volcano, 2023](https://res.cloudinary.com/dlb3lkuge/image/upload/v1754829446/IMG20250810132107_jthlce.jpg)
+![The Neal Morse band, The great adventure, 2019](https://res.cloudinary.com/dlb3lkuge/image/upload/v1754829510/IMG20250810132140_h7efmq.jpg)
+
+</Gallery>
+
+### Final Thoughts
+Here is a lightly cluttered shot of the finished product and how it looks. Thanks for scrolling this far. *Yes, I am aware that you should not place the speaker and record player on the same furniture, but I don't play nearly loud enough for that to be an issue.*
+![Final shot of the complete setup](https://res.cloudinary.com/dlb3lkuge/image/upload/v1754830634/IMG20250810133836_towvhh.jpg)
