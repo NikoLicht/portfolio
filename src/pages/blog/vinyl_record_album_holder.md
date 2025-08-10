@@ -143,4 +143,9 @@ Here I am testing with records of different size and genre. The shelf needs to b
 
 ### Final Thoughts
 Here is a lightly cluttered shot of the finished product and how it looks. Thanks for scrolling this far. *Yes, I am aware that you should not place the speaker and record player on the same furniture, but I don't play nearly loud enough for that to be an issue.*
+
+Overall, I am very pleased with the result and look. <mark>This was the first pancake, and those are never perfect.</mark> The next vinyl record sleeve shelf will be better, but only marginally so I think. I am happy with the mounts, despite being fidgety in the end. That is actually what saved me and the project, as I was a few millimeters off with my drilling or measurements.
+
+On top of that, I also had a *"build furniture"* on my [2025 bingo card](../blog/first_post.md). So that can almost be crossed off. If we count a shelf as furniture.
+
 ![Final shot of the complete setup](https://res.cloudinary.com/dlb3lkuge/image/upload/v1754830634/IMG20250810133836_towvhh.jpg)
