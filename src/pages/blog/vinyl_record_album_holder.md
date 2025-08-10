@@ -149,3 +149,18 @@ Overall, I am very pleased with the result and look. <mark>This was the first pa
 On top of that, I also had a *"build furniture"* on my [2025 bingo card](../blog/first_post.md). So that can almost be crossed off. If we count a shelf as furniture.
 
 ![Final shot of the complete setup](https://res.cloudinary.com/dlb3lkuge/image/upload/v1754830634/IMG20250810133836_towvhh.jpg)
+
+
+### Ingredients
+Here are the most valuate tools for this project, should you want to give it a whirl yourself. I've excluded small things like screws, bits and patience, as those are just the salt and pepper of diy projects.
+
+#### Tools:
+1. Router - Bosch ACE POF 1400 Router
+2. Chisel - 10mm chisel 
+3. Plane - Stanley No. 4 plane
+4. Drilling helper - Milescraft Drillmate
+
+#### Parts:
+1. [Walnut wood](https://www.linaa.dk/shop/valnoed-amerikansk-26x70x320-16612p.html)
+2. [Hidden mounts](https://beslagsmanden.dk/skjult-ophaeng/682-2508-skjult-hyldebaere-o12-mm-2d-justerbar.html#/485-laengde-100_mm)
+
