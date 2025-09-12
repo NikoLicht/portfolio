@@ -42,7 +42,7 @@ export async function GET() {
 items: posts.map((post) => ({
   title: post.data.title,
   pubDate: post.data.pubDate,
-  description: `<p>${post.data.description}</p>`,
+  description: `<p>${post.data.description}</p><p>${post.data.content}</p>`,
   link: `/portfolio/blog/${post.slug}/`,
   customData: `
     <media:content url="${post.data.cover}" medium="image" />
