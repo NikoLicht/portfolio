@@ -66,9 +66,9 @@ I nominate the below moments as my best celluloid entrapped moments so far. The 
 - Hangout with friends at big table or activities with friends.
 - More family stuff.
 - Really any photo of my _stunning_ wife.
-- The photos my wife take of me. She is often a better photographer than i am.
+- The photos my wife takes of me. She is often a better photographer than i am.
 
-Based on this not-very-scientific list, it is clear that I should hang out more with friends and family, (or propose again haha), even if I need to take a few pictures. 
+Based on this not-very-scientific list, it is clear that I should hang out more with friends and family, (or propose again haha), even if I need to take a few pictures.
 
 
 

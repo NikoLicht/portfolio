@@ -118,7 +118,51 @@ images:
     gear: Pentax K2
     film: Kodak gold 200
     date: 01-2025
-
+  - title: Athabasca River east of Jasper, AB
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1760644923/000037190019_cuh6ss.jpg"
+    gear: Pentax K2
+    film: Kodak Ultramax 400
+    date: 09-2025
+  - title: Also Athabasca River east of Jasper, AB
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1760644929/000037190024_djyvr3.jpg"
+    gear: Pentax K2
+    film: Kodak Ultramax 400
+    date: 09-2025
+  - title: Tiny fisherman in Medicine Lake
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1760644917/000037190005_yccw8o.jpg"
+    gear: Pentax K2, 300mm
+    film: Kodak Ultramax 400
+    date: 09-2025
+  - title: Curves of the river
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1760644914/000037180030_xzeihu.jpg"
+    gear: Pentax K2, 300mm
+    film: Kodak Ultramax 400
+    date: 09-2025
+  - title: Top of Larch Valley hike
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1760644930/000037190033_zxrtya.jpg"
+    gear: Pentax K2, 300mm
+    film: Kodak Ultramax 400
+    date: 10-2025
+  - title: Penticton wine tasting tour
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1760645852/000037180024_mosjb9.jpg"
+    gear: Pentax K2, 50mm
+    film: Kodak Ultramax 400
+    date: 10-2025
+  - title: Mushroom hunting in denmark
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1760646126/000037180006_uukubf.jpg"
+    gear: Pentax K2, 50mm
+    film: Kodak Ultramax 400
+    date: 09-2025
+  - title: Wife at medicine lake
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1760645844/000037200006_01_whssuh.jpg"
+    gear: Ikoflex IIa
+    film: Kodak portra 400
+    date: 09-2025
+  - title: View at Parker Ridge trail
+    link: "https://res.cloudinary.com/dlb3lkuge/image/upload/v1760645848/000037200011_01_ojj9qo.jpg"
+    gear: Ikoflex IIa
+    film: Kodak portra 400
+    date: 09-2025
     
 
 ---
